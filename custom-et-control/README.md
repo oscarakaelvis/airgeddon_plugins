@@ -20,6 +20,11 @@ By default, airgeddon copies the channel of the target network to set up the Evi
 * **Better Connection Rate:** By placing the Evil Twin on a completely interference-free channel far away from the original (e.g., Original on 1, Evil Twin on 11), your own signal becomes much clearer and stronger.
 * **Deauth & Roaming:** After a successful deauthentication attack, disconnected devices (clients) scan for the strongest signal for their network. An interference-free, distant channel often forces the clients to roam and connect to your Evil Twin faster and more reliably.
 
+## Requirements
+- [airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon) >= v12.0
+
 ## ⚙️ Installation
 
-Simply put the .sh file in airgeddon's plugins folder.
+1. Clone or download `custom_et_control.sh`.
+2. Move the file into your airgeddon `/plugins/` directory.
+3. Start airgeddon. The plugin will automatically trigger during the configuration phase of any Evil Twin attack.
