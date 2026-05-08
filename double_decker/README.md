@@ -1,6 +1,6 @@
 # WPA3‑SAE Double Decker Attack Plugin for airgeddon
 
-This airgeddon plugin performs a **WPA3‑SAE Double Decker denial‑of‑service attack** – the most powerful technique described in the paper *“WPA3: A New Denial‑of‑Service Attack Vector”*.  
+This airgeddon plugin performs a **WPA3‑SAE Double Decker denial‑of‑service attack** – the most powerful technique described in the paper *“[How is your Wi-Fi connection today? DoS attacks on WPA3-SAE](https://doi.org/10.1016/j.jisa.2021.103058)”*.
 It combines the **Omnivore** and **Muted** attack modes to overload the target router’s memory and CPU **before and after its anti‑DoS defense activates**, maximizing stress.
 
 > **“Double Decker”** – Combines omnivore & muted for maximum stress.  
@@ -11,7 +11,7 @@ It combines the **Omnivore** and **Muted** attack modes to overload the target r
 ## Features
 
 - **20 unique SAE scalar / finite field pairs** – automatically captured or manually entered  
-- **6‑GHz ready** – correctly calculates center frequencies for Wi‑Fi 6E channels  
+- **6‑GHz ready** – correctly calculates center frequencies for 6GHz band channels  
 - **Multi‑language** – fully translated into all 13 airgeddon languages  
 - **Rate‑limited** – prevents adapter lock‑up while maintaining maximum effectiveness  
 
