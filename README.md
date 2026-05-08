@@ -1,6 +1,6 @@
-# Airgeddon Plugins by Nuseo1
+# Airgeddon Plugins
 
-This repository contains custom plugins created by Nuseo1 for [airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon), the multi-use bash script for auditing wireless networks.
+This repository contains custom plugins for [airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon), the multi-use bash script for auditing wireless networks.
 
 ## Available Plugins
 
