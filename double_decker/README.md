@@ -41,7 +41,8 @@ For reliable packet injection required by this attack, use a dedicated Wi‑Fi a
 - Atheros **AR9271** chipset has also been confirmed to work.
 
 **❌ Does NOT work**  
-- Ralink RT3070  
+- Ralink RT3070
+- MediaTek MT7610U 
 - MediaTek MT7612U  
 - MediaTek MT7921U  
 
