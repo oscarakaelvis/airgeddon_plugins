@@ -23,8 +23,6 @@ This plugin performs a cryptographic downgrade attack against WPA3‑SAE network
 - **Fully multi‑language** – 13 languages built‑in
 - **Tested with various adapters** including Intel Wi‑Fi 5 (802.11ac) Wireless‑AC 9x6x [Thunder Peak] and Alfa AWUS036ACH (RTL8812AU)
 
-For the full technical background, hardware recommendations, and usage guide, see the [plugin’s own README](wpa3_sae_group_downgrade_attack/readme).
-
 ---
 
 ## Installation
