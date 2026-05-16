@@ -59,6 +59,8 @@ With this adapter, the attack produced stable packet injection and no adapter lo
    ```
 2. Launch airgeddon as usual – the attack will appear in the **WPA3 attacks menu** as *“WPA3 Group Downgrade attack”*.
 
+> ℹ️ **Note on plugin slots:** airgeddon menu **11** (WPA3 attacks) only displays a limited number of plugins. If you already have several other plugin files in `~/.airgeddon/plugins/`, the new attack may not show up unless you temporarily move some of the other plugins out of the folder. Keep only the plugins you actively need to see the entry.
+
 ---
 
 ## Technical Background
