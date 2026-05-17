@@ -4,7 +4,6 @@
 # ==============================================================================
 # Based on: Dragonblood research.
 # Compatible with airgeddon v12.0+
-# All comments are in English as requested.
 # ==============================================================================
 # shellcheck disable=SC2034,SC2154
 
