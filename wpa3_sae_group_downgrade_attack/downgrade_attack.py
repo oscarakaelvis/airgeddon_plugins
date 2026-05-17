@@ -3,7 +3,6 @@
 WPA3-SAE Downgrade Attack Engine for airgeddon plugin.
 Sends SAE Commit frames that propose weak MODP groups (22/23).
 Based on CVE-2019-9499 / Dragonblood research.
-All comments and logs in English.
 """
 import sys
 import os
@@ -66,7 +65,7 @@ WEAK_GROUPS = {
     22: (32, 256),  # MODP 2048
     23: (32, 384),  # MODP 3072
 }
-BURST_SIZE = 64
+BURST_SIZE = 64     # You can increase this to 128 for stronger bursts
 INTER_FRAME_DELAY = 0.0001
 
 def build_downgrade_commit(bssid, mac_src, group_id, scalar_len, element_len):
