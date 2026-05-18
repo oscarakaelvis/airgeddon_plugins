@@ -1,4 +1,4 @@
-# irgeddon plugins
+# airgeddon plugins
 
 This repository contains custom plugins for [airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon), the multi-use bash script for auditing wireless networks.
 
