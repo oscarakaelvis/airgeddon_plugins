@@ -224,5 +224,3 @@ function exec_downgrade_attack() {
     wait_for_process "${python3} ${scriptfolder}${plugins_dir}downgrade_attack.py ${bssid} ${channel} ${interface} ${language}" \
         "WPA3 Group Downgrade Attack"
 }
-
-function downgrade_attack_posthook_initialize_colors() { :; }
