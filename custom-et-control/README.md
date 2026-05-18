@@ -1,4 +1,4 @@
-# 🛡️ Airgeddon Plugin: Manual Evil Twin Control
+# 🛡️ airgeddon Plugin: Manual Evil Twin Control
 
 A highly customizable plugin for the WiFi auditing framework [airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon), giving you full manual control over the creation of Evil Twin Access Points.
 
