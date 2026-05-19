@@ -111,7 +111,7 @@ function custom_et_control_prehook_hookable_for_languages() {
 
 	arr["ENGLISH","custom_et_text_7"]="Warning: This may cause instability in the network!"
 	arr["SPANISH","custom_et_text_7"]="Advertencia: ¡Esto puede causar inestabilidad en la red!"
-	arr["FRENCH","custom_et_text_7"]="${pending_of_translation} Attention : cela peut provoquer une instabilité du réseau !"
+	arr["FRENCH","custom_et_text_7"]="${pending_of_translation} Attention : cela peut provoquer une instabilité du réseau!"
 	arr["CATALAN","custom_et_text_7"]="${pending_of_translation} Atenció: Això pot causar inestabilitat a la xarxa!"
 	arr["PORTUGUESE","custom_et_text_7"]="${pending_of_translation} Aviso: Isso pode causar instabilidade na rede!"
 	arr["RUSSIAN","custom_et_text_7"]="${pending_of_translation} Предупреждение: Это может вызвать нестабильность сети!"
@@ -125,7 +125,7 @@ function custom_et_control_prehook_hookable_for_languages() {
 
 	arr["ENGLISH","custom_et_text_8"]="Please enter the desired BSSID (format XX:XX:XX:XX:XX:XX):"
 	arr["SPANISH","custom_et_text_8"]="Introduzca el BSSID deseado (formato XX:XX:XX:XX:XX:XX):"
-	arr["FRENCH","custom_et_text_8"]="${pending_of_translation} Veuillez entrer le BSSID souhaité (format XX:XX:XX:XX:XX:XX) :"
+	arr["FRENCH","custom_et_text_8"]="${pending_of_translation} Veuillez entrer le BSSID souhaité (format XX:XX:XX:XX:XX:XX):"
 	arr["CATALAN","custom_et_text_8"]="${pending_of_translation} Introduïu el BSSID desitjat (format XX:XX:XX:XX:XX:XX):"
 	arr["PORTUGUESE","custom_et_text_8"]="${pending_of_translation} Insira o BSSID desejado (formato XX:XX:XX:XX:XX:XX):"
 	arr["RUSSIAN","custom_et_text_8"]="${pending_of_translation} Пожалуйста, введите желаемый BSSID (формат XX:XX:XX:XX:XX:XX):"
@@ -138,7 +138,7 @@ function custom_et_control_prehook_hookable_for_languages() {
 	arr["CHINESE","custom_et_text_8"]="${pending_of_translation} 请输入所需的 BSSID（格式 XX:XX:XX:XX:XX:XX）："
 
 	arr["ENGLISH","custom_et_text_9"]="BSSID has been set to:"
-	arr["SPANISH","custom_et_text_9"]="BSSID se ha configurado en:"
+	arr["SPANISH","custom_et_text_9"]="BSSID se ha configurado a:"
 	arr["FRENCH","custom_et_text_9"]="${pending_of_translation} Le BSSID a été défini sur :"
 	arr["CATALAN","custom_et_text_9"]="${pending_of_translation} El BSSID s'ha establert a:"
 	arr["PORTUGUESE","custom_et_text_9"]="${pending_of_translation} O BSSID foi definido para:"
@@ -166,7 +166,7 @@ function custom_et_control_prehook_hookable_for_languages() {
 	arr["CHINESE","custom_et_text_10"]="${pending_of_translation} 格式无效。正在生成标准 BSSID..."
 
 	arr["ENGLISH","custom_et_text_11"]="OK. Standard airgeddon BSSID will be used."
-	arr["SPANISH","custom_et_text_11"]="OK. Se utilizará el BSSID estándar de airgeddon."
+	arr["SPANISH","custom_et_text_11"]="OK. Se utilizará el BSSID estándar de airgeddon"
 	arr["FRENCH","custom_et_text_11"]="${pending_of_translation} OK. Le BSSID standard d'airgeddon sera utilisé."
 	arr["CATALAN","custom_et_text_11"]="${pending_of_translation} OK. S'utilitzarà el BSSID estàndard d'airgeddon."
 	arr["PORTUGUESE","custom_et_text_11"]="${pending_of_translation} OK. O BSSID padrão do airgeddon será usado."
@@ -181,7 +181,7 @@ function custom_et_control_prehook_hookable_for_languages() {
 
 	arr["ENGLISH","custom_et_text_12"]="Current channel:"
 	arr["SPANISH","custom_et_text_12"]="Canal actual:"
-	arr["FRENCH","custom_et_text_12"]="${pending_of_translation} Canal actuel :"
+	arr["FRENCH","custom_et_text_12"]="${pending_of_translation} Canal actuel:"
 	arr["CATALAN","custom_et_text_12"]="${pending_of_translation} Canal actual:"
 	arr["PORTUGUESE","custom_et_text_12"]="${pending_of_translation} Canal atual:"
 	arr["RUSSIAN","custom_et_text_12"]="${pending_of_translation} Текущий канал:"
@@ -195,7 +195,7 @@ function custom_et_control_prehook_hookable_for_languages() {
 
 	arr["ENGLISH","custom_et_text_12b"]="Enter a new channel (e.g. 1-233) or press Enter to keep it:"
 	arr["SPANISH","custom_et_text_12b"]="Introduzca un nuevo canal (ej. 1-233) o presione Intro para mantenerlo:"
-	arr["FRENCH","custom_et_text_12b"]="${pending_of_translation} Entrez un nouveau canal (par ex. 1-233) ou appuyez sur Entrée pour le conserver :"
+	arr["FRENCH","custom_et_text_12b"]="${pending_of_translation} Entrez un nouveau canal (par ex. 1-233) ou appuyez sur Entrée pour le conserver:"
 	arr["CATALAN","custom_et_text_12b"]="${pending_of_translation} Introduïu un canal nou (p. ex. 1-233) o premeu Enter per mantenir-lo:"
 	arr["PORTUGUESE","custom_et_text_12b"]="${pending_of_translation} Digite um novo canal (ex. 1-233) ou pressione Enter para mantê-lo:"
 	arr["RUSSIAN","custom_et_text_12b"]="${pending_of_translation} Введите новый канал (например, 1-233) или нажмите Enter, чтобы оставить его:"
@@ -208,8 +208,8 @@ function custom_et_control_prehook_hookable_for_languages() {
 	arr["CHINESE","custom_et_text_12b"]="${pending_of_translation} 输入新信道（例如 1-233）或按回车键保持不变："
 
 	arr["ENGLISH","custom_et_text_13"]="Channel has been set to:"
-	arr["SPANISH","custom_et_text_13"]="El canal se configuró en:"
-	arr["FRENCH","custom_et_text_13"]="${pending_of_translation} Le canal a été défini sur :"
+	arr["SPANISH","custom_et_text_13"]="El canal se configuró a:"
+	arr["FRENCH","custom_et_text_13"]="${pending_of_translation} Le canal a été défini sur:"
 	arr["CATALAN","custom_et_text_13"]="${pending_of_translation} El canal s'ha establert a:"
 	arr["PORTUGUESE","custom_et_text_13"]="${pending_of_translation} O canal foi definido para:"
 	arr["RUSSIAN","custom_et_text_13"]="${pending_of_translation} Канал установлен на:"
@@ -223,7 +223,7 @@ function custom_et_control_prehook_hookable_for_languages() {
 
 	arr["ENGLISH","custom_et_text_14"]="Keeping standard channel:"
 	arr["SPANISH","custom_et_text_14"]="Manteniendo el canal estándar:"
-	arr["FRENCH","custom_et_text_14"]="${pending_of_translation} Conservation du canal standard :"
+	arr["FRENCH","custom_et_text_14"]="${pending_of_translation} Conservation du canal standard:"
 	arr["CATALAN","custom_et_text_14"]="${pending_of_translation} Es manté el canal estàndard:"
 	arr["PORTUGUESE","custom_et_text_14"]="${pending_of_translation} Mantendo o canal padrão:"
 	arr["RUSSIAN","custom_et_text_14"]="${pending_of_translation} Сохранение стандартного канала:"
@@ -237,7 +237,7 @@ function custom_et_control_prehook_hookable_for_languages() {
 
 	arr["ENGLISH","custom_et_text_15"]="How should the ESSID (AP name) for the Evil Twin be set?"
 	arr["SPANISH","custom_et_text_15"]="¿Cómo se debe configurar el ESSID (nombre del AP) para el Evil Twin?"
-	arr["FRENCH","custom_et_text_15"]="${pending_of_translation} Comment définir l'ESSID (nom AP) pour l'Evil Twin ?"
+	arr["FRENCH","custom_et_text_15"]="${pending_of_translation} Comment définir l'ESSID (nom AP) pour l'Evil Twin?"
 	arr["CATALAN","custom_et_text_15"]="${pending_of_translation} Com s'ha d'establir l'ESSID (nom AP) per a l'Evil Twin?"
 	arr["PORTUGUESE","custom_et_text_15"]="${pending_of_translation} Como o ESSID (nome AP) para o Evil Twin deve ser definido?"
 	arr["RUSSIAN","custom_et_text_15"]="${pending_of_translation} Как должен быть установлен ESSID (имя AP) для Evil Twin?"
@@ -307,7 +307,7 @@ function custom_et_control_prehook_hookable_for_languages() {
 
 	arr["ENGLISH","custom_et_text_20"]="Please enter the desired ESSID (cannot be empty):"
 	arr["SPANISH","custom_et_text_20"]="Introduzca el ESSID deseado (no puede estar vacío):"
-	arr["FRENCH","custom_et_text_20"]="${pending_of_translation} Veuillez entrer l'ESSID souhaité (ne peut pas être vide) :"
+	arr["FRENCH","custom_et_text_20"]="${pending_of_translation} Veuillez entrer l'ESSID souhaité (ne peut pas être vide):"
 	arr["CATALAN","custom_et_text_20"]="${pending_of_translation} Introduïu l'ESSID desitjat (no pot estar buit):"
 	arr["PORTUGUESE","custom_et_text_20"]="${pending_of_translation} Insira o ESSID desejado (não pode estar vazio):"
 	arr["RUSSIAN","custom_et_text_20"]="${pending_of_translation} Пожалуйста, введите желаемый ESSID (не может быть пустым):"
@@ -348,7 +348,7 @@ function custom_et_control_prehook_hookable_for_languages() {
 	arr["CHINESE","custom_et_text_22"]="${pending_of_translation} 无输入。正在生成标准 ESSID..."
 
 	arr["ENGLISH","custom_et_text_23"]="OK. Standard airgeddon ESSID will be used."
-	arr["SPANISH","custom_et_text_23"]="OK. Se utilizará el ESSID estándar de airgeddon."
+	arr["SPANISH","custom_et_text_23"]="OK. Se utilizará el ESSID estándar de airgeddon"
 	arr["FRENCH","custom_et_text_23"]="${pending_of_translation} OK. L'ESSID standard d'airgeddon sera utilisé."
 	arr["CATALAN","custom_et_text_23"]="${pending_of_translation} OK. S'utilitzarà l'ESSID estàndard d'airgeddon."
 	arr["PORTUGUESE","custom_et_text_23"]="${pending_of_translation} OK. O ESSID padrão do airgeddon será usado."
@@ -362,7 +362,7 @@ function custom_et_control_prehook_hookable_for_languages() {
 	arr["CHINESE","custom_et_text_23"]="${pending_of_translation} 好的。将使用标准 airgeddon ESSID。"
 
 	arr["ENGLISH","custom_et_text_24"]="Note: Changing channel means DoS won't work simultaneously on original channel."
-	arr["SPANISH","custom_et_text_24"]="Nota: Cambiar de canal significa que DoS no funcionará simultáneamente en el canal original."
+	arr["SPANISH","custom_et_text_24"]="Nota: Cambiar de canal significa que el DoS no funcionará simultáneamente en el canal original"
 	arr["FRENCH","custom_et_text_24"]="${pending_of_translation} Note : Changer de canal signifie que le DoS ne fonctionnera pas simultanément sur le canal d'origine."
 	arr["CATALAN","custom_et_text_24"]="${pending_of_translation} Nota: Canviar de canal significa que DoS no funcionarà simultàniament al canal original."
 	arr["PORTUGUESE","custom_et_text_24"]="${pending_of_translation} Nota: Mudar de canal significa que o DoS não funcionará simultaneamente no canal original."
@@ -377,7 +377,7 @@ function custom_et_control_prehook_hookable_for_languages() {
 
 	arr["ENGLISH","custom_et_text_25"]="Which band does this channel belong to?"
 	arr["SPANISH","custom_et_text_25"]="¿A qué banda pertenece este canal?"
-	arr["FRENCH","custom_et_text_25"]="${pending_of_translation} À quelle bande appartient ce canal ?"
+	arr["FRENCH","custom_et_text_25"]="${pending_of_translation} À quelle bande appartient ce canal?"
 	arr["CATALAN","custom_et_text_25"]="${pending_of_translation} A quina banda pertany aquest canal?"
 	arr["PORTUGUESE","custom_et_text_25"]="${pending_of_translation} A qual banda este canal pertence?"
 	arr["RUSSIAN","custom_et_text_25"]="${pending_of_translation} К какому диапазону относится этот канал?"
