@@ -454,7 +454,7 @@ function double_decker_attack_prehook_hookable_for_languages() {
 
 	# double_decker_attack_1
 	arr["ENGLISH","double_decker_attack_1"]="WPA3 Double Decker DoS combines Omnivore and Muted attacks."
-	arr["SPANISH","double_decker_attack_1"]="El DoS WPA3 Double Decker combina los ataques Omnivore y Muted."
+	arr["SPANISH","double_decker_attack_1"]="El ataque DoS WPA3 Double Decker combina los ataques Omnivore y Muted"
 	arr["FRENCH","double_decker_attack_1"]="${pending_of_translation} Le DoS WPA3 Double Decker combine les attaques Omnivore et Muted."
 	arr["CATALAN","double_decker_attack_1"]="${pending_of_translation} El DoS WPA3 Double Decker combina els atacs Omnivore i Muted."
 	arr["PORTUGUESE","double_decker_attack_1"]="${pending_of_translation} O DoS WPA3 Double Decker combina os ataques Omnivore e Muted."
@@ -469,7 +469,7 @@ function double_decker_attack_prehook_hookable_for_languages() {
 
 	# double_decker_attack_2
 	arr["ENGLISH","double_decker_attack_2"]="This attack requires python3.6+ installed on your system."
-	arr["SPANISH","double_decker_attack_2"]="Este ataque requiere tener python3.6+ instalado en el sistema."
+	arr["SPANISH","double_decker_attack_2"]="Este ataque requiere tener python3.6+ instalado en el sistema"
 	arr["FRENCH","double_decker_attack_2"]="${pending_of_translation} Cette attaque nécessite python3.6+."
 	arr["CATALAN","double_decker_attack_2"]="${pending_of_translation} Aquest atac requereix python3.6+."
 	arr["PORTUGUESE","double_decker_attack_2"]="${pending_of_translation} Este ataque requer python3.6+."
@@ -484,7 +484,7 @@ function double_decker_attack_prehook_hookable_for_languages() {
 
 	# double_decker_attack_3
 	arr["ENGLISH","double_decker_attack_3"]="Python attack script double_decker_attack.py not found."
-	arr["SPANISH","double_decker_attack_3"]="No se encontró el script python double_decker_attack.py."
+	arr["SPANISH","double_decker_attack_3"]="No se encontró el script python double_decker_attack.py"
 	arr["FRENCH","double_decker_attack_3"]="${pending_of_translation} Le script python double_decker_attack.py est introuvable."
 	arr["CATALAN","double_decker_attack_3"]="${pending_of_translation} No s'ha trobat l'script python double_decker_attack.py."
 	arr["PORTUGUESE","double_decker_attack_3"]="${pending_of_translation} Script python double_decker_attack.py não encontrado."
@@ -499,7 +499,7 @@ function double_decker_attack_prehook_hookable_for_languages() {
 
 	# double_decker_attack_4
 	arr["ENGLISH","double_decker_attack_4"]="This attack requires tshark installed."
-	arr["SPANISH","double_decker_attack_4"]="Este ataque requiere tshark instalado."
+	arr["SPANISH","double_decker_attack_4"]="Este ataque requiere tshark instalado"
 	arr["FRENCH","double_decker_attack_4"]="${pending_of_translation} Cette attaque nécessite tshark."
 	arr["CATALAN","double_decker_attack_4"]="${pending_of_translation} Aquest atac requereix tshark instal·lat."
 	arr["PORTUGUESE","double_decker_attack_4"]="${pending_of_translation} Este ataque requer o tshark instalado."
@@ -514,7 +514,7 @@ function double_decker_attack_prehook_hookable_for_languages() {
 
 	# double_decker_attack_5
 	arr["ENGLISH","double_decker_attack_5"]="This attack requires wpa_supplicant installed."
-	arr["SPANISH","double_decker_attack_5"]="Este ataque requiere wpa_supplicant instalado."
+	arr["SPANISH","double_decker_attack_5"]="Este ataque requiere wpa_supplicant instalado"
 	arr["FRENCH","double_decker_attack_5"]="${pending_of_translation} Cette attaque nécessite wpa_supplicant."
 	arr["CATALAN","double_decker_attack_5"]="${pending_of_translation} Aquest atac requereix wpa_supplicant instal·lat."
 	arr["PORTUGUESE","double_decker_attack_5"]="${pending_of_translation} Este ataque requer o wpa_supplicant instalado."
@@ -544,7 +544,7 @@ function double_decker_attack_prehook_hookable_for_languages() {
 
 	# double_decker_attack_9
 	arr["ENGLISH","double_decker_attack_9"]="Attack is ready. 20 SAE pairs loaded."
-	arr["SPANISH","double_decker_attack_9"]="Ataque listo. 20 pares SAE cargados."
+	arr["SPANISH","double_decker_attack_9"]="Ataque preparado. 20 pares SAE cargados"
 	arr["FRENCH","double_decker_attack_9"]="${pending_of_translation} Attaque prête. 20 paires SAE chargées."
 	arr["CATALAN","double_decker_attack_9"]="${pending_of_translation} Atac preparat. 20 parells SAE carregats."
 	arr["PORTUGUESE","double_decker_attack_9"]="${pending_of_translation} Ataque pronto. 20 pares SAE carregados."
@@ -574,7 +574,7 @@ function double_decker_attack_prehook_hookable_for_languages() {
 
 	# double_decker_attack_12
 	arr["ENGLISH","double_decker_attack_12"]="Failed to capture 20 SAE pairs. Check target and distance."
-	arr["SPANISH","double_decker_attack_12"]="No se pudieron capturar 20 pares SAE. Verifique el objetivo y la distancia."
+	arr["SPANISH","double_decker_attack_12"]="No se pudieron capturar 20 pares SAE. Verifique el objetivo y la distancia"
 	arr["FRENCH","double_decker_attack_12"]="${pending_of_translation} Échec de la capture des 20 paires SAE. Vérifiez la cible et la distance."
 	arr["CATALAN","double_decker_attack_12"]="${pending_of_translation} No s'han pogut capturar 20 parells SAE. Comproveu l'objectiu i la distància."
 	arr["PORTUGUESE","double_decker_attack_12"]="${pending_of_translation} Falha ao capturar 20 pares SAE. Verifique o alvo e a distância."
@@ -589,7 +589,7 @@ function double_decker_attack_prehook_hookable_for_languages() {
 
 	# double_decker_attack_13
 	arr["ENGLISH","double_decker_attack_13"]="Successfully captured 20 SAE pairs."
-	arr["SPANISH","double_decker_attack_13"]="Se capturaron exitosamente 20 pares SAE."
+	arr["SPANISH","double_decker_attack_13"]="Se capturaron exitosamente 20 pares SAE"
 	arr["FRENCH","double_decker_attack_13"]="${pending_of_translation} 20 paires SAE capturées avec succès."
 	arr["CATALAN","double_decker_attack_13"]="${pending_of_translation} S'han capturat correctament 20 parells SAE."
 	arr["PORTUGUESE","double_decker_attack_13"]="${pending_of_translation} 20 pares SAE capturados com sucesso."
@@ -604,7 +604,7 @@ function double_decker_attack_prehook_hookable_for_languages() {
 
 	# double_decker_attack_14
 	arr["ENGLISH","double_decker_attack_14"]="Secondary interface must be in managed mode."
-	arr["SPANISH","double_decker_attack_14"]="La interfaz secundaria debe estar en modo managed."
+	arr["SPANISH","double_decker_attack_14"]="La interfaz secundaria debe estar en modo managed"
 	arr["FRENCH","double_decker_attack_14"]="${pending_of_translation} L'interface secondaire doit être en mode managed."
 	arr["CATALAN","double_decker_attack_14"]="${pending_of_translation} La interfície secundària ha d'estar en mode managed."
 	arr["PORTUGUESE","double_decker_attack_14"]="${pending_of_translation} A interface secundária deve estar no modo managed."
@@ -619,7 +619,7 @@ function double_decker_attack_prehook_hookable_for_languages() {
 
 	# double_decker_attack_15
 	arr["ENGLISH","double_decker_attack_15"]="Cached SAE pairs found for this BSSID. Use them?"
-	arr["SPANISH","double_decker_attack_15"]="Se encontraron pares SAE en caché para este BSSID. ¿Usarlos?"
+	arr["SPANISH","double_decker_attack_15"]="Se encontraron pares SAE en caché para este BSSID. ¿Utilizarlos?"
 	arr["FRENCH","double_decker_attack_15"]="${pending_of_translation} Des paires SAE en cache ont été trouvées pour ce BSSID. Les utiliser ?"
 	arr["CATALAN","double_decker_attack_15"]="${pending_of_translation} S'han trobat parells SAE en memòria cau per a aquest BSSID. Voleu utilitzar-los?"
 	arr["PORTUGUESE","double_decker_attack_15"]="${pending_of_translation} Pares SAE em cache encontrados para este BSSID. Usá-los?"
@@ -634,7 +634,7 @@ function double_decker_attack_prehook_hookable_for_languages() {
 
 	# double_decker_attack_manual_1
 	arr["ENGLISH","double_decker_attack_manual_1"]="Input SAE Pair."
-	arr["SPANISH","double_decker_attack_manual_1"]="Ingrese el par SAE."
+	arr["SPANISH","double_decker_attack_manual_1"]="Ingrese el par SAE"
 	arr["FRENCH","double_decker_attack_manual_1"]="${pending_of_translation} Saisissez la paire SAE."
 	arr["CATALAN","double_decker_attack_manual_1"]="${pending_of_translation} Introduïu el parell SAE."
 	arr["PORTUGUESE","double_decker_attack_manual_1"]="${pending_of_translation} Insira o par SAE."
@@ -649,7 +649,7 @@ function double_decker_attack_prehook_hookable_for_languages() {
 
 	# double_decker_attack_manual_2
 	arr["ENGLISH","double_decker_attack_manual_2"]="Insert Scalar (64 hex chars)."
-	arr["SPANISH","double_decker_attack_manual_2"]="Inserte Scalar (64 caracteres hexadecimales)."
+	arr["SPANISH","double_decker_attack_manual_2"]="Inserte Scalar (64 caracteres hexadecimales)"
 	arr["FRENCH","double_decker_attack_manual_2"]="${pending_of_translation} Insérez Scalar (64 caractères hexadécimaux)."
 	arr["CATALAN","double_decker_attack_manual_2"]="${pending_of_translation} Introduïu Scalar (64 caràcters hexadecimals)."
 	arr["PORTUGUESE","double_decker_attack_manual_2"]="${pending_of_translation} Insira Scalar (64 caracteres hexadecimais)."
@@ -664,7 +664,7 @@ function double_decker_attack_prehook_hookable_for_languages() {
 
 	# double_decker_attack_manual_3
 	arr["ENGLISH","double_decker_attack_manual_3"]="Insert Finite Field Element (128 hex chars)."
-	arr["SPANISH","double_decker_attack_manual_3"]="Inserte Finite Field Element (128 caracteres hexadecimales)."
+	arr["SPANISH","double_decker_attack_manual_3"]="Inserte Finite Field Element (128 caracteres hexadecimales)"
 	arr["FRENCH","double_decker_attack_manual_3"]="${pending_of_translation} Insérez Finite Field Element (128 caractères hexadécimaux)."
 	arr["CATALAN","double_decker_attack_manual_3"]="${pending_of_translation} Introduïu Finite Field Element (128 caràcters hexadecimals)."
 	arr["PORTUGUESE","double_decker_attack_manual_3"]="${pending_of_translation} Insira Finite Field Element (128 caracteres hexadecimais)."
