@@ -72,7 +72,7 @@ function downgrade_attack_prehook_hookable_for_languages() {
     fi
 
     arr["ENGLISH","downgrade_attack_1"]="WPA3 group downgrade forces the AP to accept weak MODP groups (22/23)"
-    arr["SPANISH","downgrade_attack_1"]="${pending_of_translation} El downgrade de grupo WPA3 fuerza al AP a aceptar grupos MODP débiles (22/23)"
+    arr["SPANISH","downgrade_attack_1"]="El downgrade de WPA3 group fuerza al AP a aceptar grupos MODP débiles (22/23)"
     arr["FRENCH","downgrade_attack_1"]="${pending_of_translation} Le downgrade de groupe WPA3 force le point d'accès à accepter les groupes MODP faibles (22/23)"
     arr["CATALAN","downgrade_attack_1"]="${pending_of_translation} El downgrade de grup WPA3 força el punt d'accés a acceptar grups MODP febles (22/23)"
     arr["PORTUGUESE","downgrade_attack_1"]="${pending_of_translation} O downgrade de grupo WPA3 força o AP a aceitar grupos MODP fracos (22/23)"
@@ -87,7 +87,7 @@ function downgrade_attack_prehook_hookable_for_languages() {
     wpa3_hints+=("downgrade_attack_1")
 
     arr["ENGLISH","downgrade_attack_2"]="This attack requires to have python3.6+ installed on your system"
-    arr["SPANISH","downgrade_attack_2"]="${pending_of_translation} Este ataque requiere tener python3.6+ instalado en el sistema"
+    arr["SPANISH","downgrade_attack_2"]="Este ataque requiere tener python3.6+ instalado en el sistema"
     arr["FRENCH","downgrade_attack_2"]="${pending_of_translation} Cette attaque nécessite d'avoir python3.6+ installé sur le système"
     arr["CATALAN","downgrade_attack_2"]="${pending_of_translation} Aquest atac requereix tenir python3.6+ instal·lat al sistema"
     arr["PORTUGUESE","downgrade_attack_2"]="${pending_of_translation} Este ataque requer python3.6+ instalado no sistema"
@@ -101,7 +101,7 @@ function downgrade_attack_prehook_hookable_for_languages() {
     arr["CHINESE","downgrade_attack_2"]="${pending_of_translation} 此攻击需要在系统上安装 python3.6+"
 
     arr["ENGLISH","downgrade_attack_3"]="The python3 script required as part of this plugin to run this attack is missing. Please make sure that the file \"${normal_color}downgrade_attack.py${red_color}\" exists and that it is in the plugins dir next to the \"${normal_color}downgrade_attack.sh${red_color}\" file"
-    arr["SPANISH","downgrade_attack_3"]="${pending_of_translation} El script de python3 requerido como parte de este plugin para ejecutar este ataque no se encuentra. Por favor, asegúrate de que existe el fichero \"${normal_color}downgrade_attack.py${red_color}\" y que está en la carpeta de plugins junto al fichero \"${normal_color}downgrade_attack.sh${red_color}\""
+    arr["SPANISH","downgrade_attack_3"]=El script de python3 requerido como parte de este plugin para ejecutar este ataque no se encuentra. Por favor, asegúrate de que existe el fichero \"\${normal_color}downgrade_attack.py\${red_color}\" y que está en la carpeta de plugins junto al fichero \"\${normal_color}downgrade_attack.sh\${red_color}\""
     arr["FRENCH","downgrade_attack_3"]="${pending_of_translation} Le script python3 requis pour exécuter cette attaque est manquant. Assurez-vous que le fichier \"${normal_color}downgrade_attack.py${red_color}\" existe et se trouve dans le dossier plugins à côté du fichier \"${normal_color}downgrade_attack.sh${red_color}\""
     arr["CATALAN","downgrade_attack_3"]="${pending_of_translation} El script de python3 requerit per executar aquest atac no es troba. Assegureu-vos que existeix el fitxer \"${normal_color}downgrade_attack.py${red_color}\" i que està a la carpeta de plugins al costat del fitxer \"${normal_color}downgrade_attack.sh${red_color}\""
     arr["PORTUGUESE","downgrade_attack_3"]="${pending_of_translation} O script python3 necessário para executar este ataque está ausente. Verifique se o arquivo \"${normal_color}downgrade_attack.py${red_color}\" existe e está na pasta de plugins junto ao arquivo \"${normal_color}downgrade_attack.sh${red_color}\""
