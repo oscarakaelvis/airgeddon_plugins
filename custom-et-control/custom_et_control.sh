@@ -395,55 +395,63 @@ function custom_et_control_prehook_hookable_for_languages() {
 # ----------------------------------------------------------------------
 function custom_et_control_interactive_prompt() {
 	debug_print
+
 	local lang_key="${language}"
 	if [[ -z "${arr["${lang_key}","custom_et_text_1"]}" ]]; then
 		lang_key="ENGLISH"
 	fi
+
 	custom_et_chosen_bssid=""
 	custom_et_chosen_essid=""
 
 	echo
-	echo -e "${yellow_color}${arr["${lang_key}","custom_et_text_1"]}${normal_color}"
+	language_strings "${lang_key}" "custom_et_text_1" "yellow"
 	echo
-	echo -e "${cyan_color}${arr["${lang_key}","custom_et_text_2"]}${normal_color}"
-	echo -e "1. ${arr["${lang_key}","custom_et_text_3"]} (${bssid})"
-	echo -e "2. ${arr["${lang_key}","custom_et_text_4"]}"
-	echo -e "3. ${arr["${lang_key}","custom_et_text_5"]}"
+
+	language_strings "${lang_key}" "custom_et_text_2" "cyan"
+	echo -e "1. $(language_strings "${lang_key}" "custom_et_text_3" "return") (${bssid})"
+	echo -e "2. $(language_strings "${lang_key}" "custom_et_text_4" "return")"
+	echo -e "3. $(language_strings "${lang_key}" "custom_et_text_5" "return")"
 	read -rp "> " bssid_choice
 
 	case "${bssid_choice}" in
 		1)
 			custom_et_chosen_bssid="${bssid}"
-			echo -e "${green_color}${arr["${lang_key}","custom_et_text_6"]} ${custom_et_chosen_bssid}${normal_color}"
-			echo -e "${red_color}${arr["${lang_key}","custom_et_text_7"]}${normal_color}"
+			language_strings "${lang_key}" "custom_et_text_6" "green"
+			echo -e " ${green_color}${custom_et_chosen_bssid}${normal_color}"
+			language_strings "${lang_key}" "custom_et_text_7" "red"
 			;;
 		2)
-			echo -e "${green_color}${arr["${lang_key}","custom_et_text_8"]}${normal_color}"
+			language_strings "${lang_key}" "custom_et_text_8" "green"
 			read -rp "> " custom_bssid
 			if [[ -n "${custom_bssid}" && "${custom_bssid}" =~ ^([0-9A-Fa-f]{2}:){5}[0-9A-Fa-f]{2}$ ]]; then
 				custom_et_chosen_bssid="${custom_bssid}"
-				echo -e "${green_color}${arr["${lang_key}","custom_et_text_9"]} ${custom_et_chosen_bssid}${normal_color}"
+				language_strings "${lang_key}" "custom_et_text_9" "green"
+				echo -e " ${green_color}${custom_et_chosen_bssid}${normal_color}"
 			else
-				echo -e "${red_color}${arr["${lang_key}","custom_et_text_10"]}${normal_color}"
+				language_strings "${lang_key}" "custom_et_text_10" "red"
 			fi
 			;;
 		*)
-			echo -e "${green_color}${arr["${lang_key}","custom_et_text_11"]}${normal_color}"
+			language_strings "${lang_key}" "custom_et_text_11" "green"
 			;;
 	esac
 
 	echo
-	echo -e "${cyan_color}${arr["${lang_key}","custom_et_text_12"]} ${channel}${normal_color}"
-	echo -e "${red_color}${arr["${lang_key}","custom_et_text_24"]}${normal_color}"
-	echo -e "${cyan_color}${arr["${lang_key}","custom_et_text_12b"]}${normal_color}"
+	language_strings "${lang_key}" "custom_et_text_12" "cyan"
+	echo -e " ${cyan_color}${channel}${normal_color}"
+	language_strings "${lang_key}" "custom_et_text_24" "red"
+	language_strings "${lang_key}" "custom_et_text_12b" "cyan"
 	read -rp "> " custom_channel
 
 	if [[ -n "${custom_channel}" && "${custom_channel}" =~ ^[0-9]+$ && "${custom_channel}" -gt 0 && "${custom_channel}" -le 233 ]]; then
 		channel="${custom_channel}"
 		echo "${channel}" > "${tmpdir}${channelfile}"
-		echo -e "${green_color}${arr["${lang_key}","custom_et_text_13"]} ${channel}${normal_color}"
+		language_strings "${lang_key}" "custom_et_text_13" "green"
+		echo -e " ${green_color}${channel}${normal_color}"
+		
 		echo
-		echo -e "${cyan_color}${arr["${lang_key}","custom_et_text_25"]}${normal_color}"
+		language_strings "${lang_key}" "custom_et_text_25" "cyan"
 		echo "1. 2.4Ghz"
 		echo "2. 5Ghz"
 		echo "3. 6Ghz"
@@ -459,33 +467,38 @@ function custom_et_control_interactive_prompt() {
 		done
 		echo -e "${green_color}Band -> ${band}${normal_color}"
 	else
-		echo -e "${green_color}${arr["${lang_key}","custom_et_text_14"]} ${channel}${normal_color}"
+		language_strings "${lang_key}" "custom_et_text_14" "green"
+		echo -e " ${green_color}${channel}${normal_color}"
 	fi
 
 	echo
-	echo -e "${cyan_color}${arr["${lang_key}","custom_et_text_15"]}${normal_color}"
-	echo -e "1. ${arr["${lang_key}","custom_et_text_16"]} (${essid})"
-	echo -e "2. ${arr["${lang_key}","custom_et_text_17"]}"
-	echo -e "3. ${arr["${lang_key}","custom_et_text_18"]}"
+	echo
+	language_strings "${lang_key}" "custom_et_text_15" "cyan"
+	echo -e "1. $(language_strings "${lang_key}" "custom_et_text_16" "return") (${essid})"
+	echo -e "2. $(language_strings "${lang_key}" "custom_et_text_17" "return")"
+	echo -e "3. $(language_strings "${lang_key}" "custom_et_text_18" "return")"
 	read -rp "> " essid_choice
 
 	case "${essid_choice}" in
 		1)
 			custom_et_chosen_essid="${essid}"
-			echo -e "${green_color}${arr["${lang_key}","custom_et_text_19"]} \"${essid}\"${normal_color}"
+			language_strings "${lang_key}" "custom_et_text_19" "green"
+			echo -e " ${green_color}\"${essid}\"${normal_color}"
 			;;
 		2)
 			local custom_essid=""
-			echo -e "${green_color}${arr["${lang_key}","custom_et_text_20"]}${normal_color}"
+			language_strings "${lang_key}" "custom_et_text_20" "green"
 			while [[ -z "${custom_essid}" ]]; do
 				read -r -p "> " custom_essid
 			done
 			custom_et_chosen_essid="${custom_essid}"
-			echo -e "${green_color}${arr["${lang_key}","custom_et_text_21"]} \"${custom_essid}\"${normal_color}"
+			language_strings "${lang_key}" "custom_et_text_21" "green"
+			echo -e " ${green_color}\"${custom_essid}\"${normal_color}"
 			;;
 		*)
 			custom_et_chosen_essid="${essid}"
-			echo -e "${green_color}${arr["${lang_key}","custom_et_text_23"]} \"${essid}\"${normal_color}"
+			language_strings "${lang_key}" "custom_et_text_23" "green"
+			echo -e " ${green_color}\"${essid}\"${normal_color}"
 			;;
 	esac
 
