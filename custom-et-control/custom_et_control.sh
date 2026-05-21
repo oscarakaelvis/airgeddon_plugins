@@ -3,6 +3,7 @@
 # =============================================================================
 # airgeddon Plugin: custom_et_control.sh
 # Manual Evil Twin Control
+# IMPORTANT: This file MUST be named exactly "custom_et_control.sh"
 # =============================================================================
 
 #shellcheck disable=SC2034,SC2154
@@ -52,19 +53,19 @@ function custom_et_control_prehook_hookable_for_languages() {
 	arr["ARABIC","custom_et_text_2"]="\${pending_of_translation} كيف يجب تعيين BSSID لـ Evil Twin؟"
 	arr["CHINESE","custom_et_text_2"]="\${pending_of_translation} 应该如何设置 Evil Twin 的 BSSID？"
 
-	arr["ENGLISH","custom_et_text_3"]="Use exact original BSSID \${cyan_color}(\${bssid})\${normal_color}"
-	arr["SPANISH","custom_et_text_3"]="Usar el BSSID original exacto \${cyan_color}(\${bssid})\${normal_color}"
-	arr["FRENCH","custom_et_text_3"]="\${pending_of_translation} Utiliser le BSSID original exact \${cyan_color}(\${bssid})\${normal_color}"
-	arr["CATALAN","custom_et_text_3"]="\${pending_of_translation} Utilitzar el BSSID original exacte \${cyan_color}(\${bssid})\${normal_color}"
-	arr["PORTUGUESE","custom_et_text_3"]="\${pending_of_translation} Usar o BSSID original exato \${cyan_color}(\${bssid})\${normal_color}"
-	arr["RUSSIAN","custom_et_text_3"]="\${pending_of_translation} Использовать точный исходный BSSID \${cyan_color}(\${bssid})\${normal_color}"
-	arr["GREEK","custom_et_text_3"]="\${pending_of_translation} Χρησιμοποιήστε το ακριβές αρχικό BSSID \${cyan_color}(\${bssid})\${normal_color}"
-	arr["ITALIAN","custom_et_text_3"]="\${pending_of_translation} Usa l'esatto BSSID originale \${cyan_color}(\${bssid})\${normal_color}"
-	arr["POLISH","custom_et_text_3"]="\${pending_of_translation} Użyj dokładnego oryginalnego BSSID \${cyan_color}(\${bssid})\${normal_color}"
-	arr["GERMAN","custom_et_text_3"]="Exakte originale BSSID verwenden \${cyan_color}(\${bssid})\${normal_color}"
-	arr["TURKISH","custom_et_text_3"]="\${pending_of_translation} Tam orijinal BSSID'yi kullan \${cyan_color}(\${bssid})\${normal_color}"
-	arr["ARABIC","custom_et_text_3"]="\${pending_of_translation} استخدام BSSID الأصلي بالضبط \${cyan_color}(\${bssid})\${normal_color}"
-	arr["CHINESE","custom_et_text_3"]="\${pending_of_translation} 使用确切的原始 BSSID \${cyan_color}(\${bssid})\${normal_color}"
+	arr["ENGLISH","custom_et_text_3"]="Use exact original BSSID"
+	arr["SPANISH","custom_et_text_3"]="Usar el BSSID original exacto"
+	arr["FRENCH","custom_et_text_3"]="\${pending_of_translation} Utiliser le BSSID original exact"
+	arr["CATALAN","custom_et_text_3"]="\${pending_of_translation} Utilitzar el BSSID original exacte"
+	arr["PORTUGUESE","custom_et_text_3"]="\${pending_of_translation} Usar o BSSID original exato"
+	arr["RUSSIAN","custom_et_text_3"]="\${pending_of_translation} Использовать точный исходный BSSID"
+	arr["GREEK","custom_et_text_3"]="\${pending_of_translation} Χρησιμοποιήστε το ακριβές αρχικό BSSID"
+	arr["ITALIAN","custom_et_text_3"]="\${pending_of_translation} Usa l'esatto BSSID originale"
+	arr["POLISH","custom_et_text_3"]="\${pending_of_translation} Użyj dokładnego oryginalnego BSSID"
+	arr["GERMAN","custom_et_text_3"]="Exakte originale BSSID verwenden"
+	arr["TURKISH","custom_et_text_3"]="\${pending_of_translation} Tam orijinal BSSID'yi kullan"
+	arr["ARABIC","custom_et_text_3"]="\${pending_of_translation} استخدام BSSID الأصلي بالضبط"
+	arr["CHINESE","custom_et_text_3"]="\${pending_of_translation} 使用确切的原始 BSSID"
 
 	arr["ENGLISH","custom_et_text_4"]="Enter a completely new BSSID manually"
 	arr["SPANISH","custom_et_text_4"]="Introducir un BSSID completamente nuevo manualmente"
@@ -94,19 +95,19 @@ function custom_et_control_prehook_hookable_for_languages() {
 	arr["ARABIC","custom_et_text_5"]="\${pending_of_translation} استخدام BSSID الافتراضي (المعدل قليلاً) لـ airgeddon (الافتراضي)"
 	arr["CHINESE","custom_et_text_5"]="\${pending_of_translation} 使用标准（稍作修改的）airgeddon BSSID（默认）"
 
-	arr["ENGLISH","custom_et_text_6"]="OK. Original BSSID will be used: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["SPANISH","custom_et_text_6"]="OK. Se utilizará el BSSID original: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["FRENCH","custom_et_text_6"]="\${pending_of_translation} OK. Le BSSID original sera utilisé : \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["CATALAN","custom_et_text_6"]="\${pending_of_translation} OK. S'utilitzarà el BSSID original: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["PORTUGUESE","custom_et_text_6"]="\${pending_of_translation} OK. O BSSID original será usado: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["RUSSIAN","custom_et_text_6"]="\${pending_of_translation} ОК. Будет использован исходный BSSID: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["GREEK","custom_et_text_6"]="\${pending_of_translation} OK. Το αρχικό BSSID θα χρησιμοποιηθεί: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["ITALIAN","custom_et_text_6"]="\${pending_of_translation} OK. Verrà utilizzato il BSSID originale: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["POLISH","custom_et_text_6"]="\${pending_of_translation} OK. Zostanie użyty oryginalny BSSID: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["GERMAN","custom_et_text_6"]="OK. Die originale BSSID wird verwendet: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["TURKISH","custom_et_text_6"]="\${pending_of_translation} Tamam. Orijinal BSSID kullanılacak: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["ARABIC","custom_et_text_6"]="\${pending_of_translation} حسنا. سيتم استخدام BSSID الأصلي: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["CHINESE","custom_et_text_6"]="\${pending_of_translation} 好的。将使用原始 BSSID： \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
+	arr["ENGLISH","custom_et_text_6"]="OK. Original BSSID will be used:"
+	arr["SPANISH","custom_et_text_6"]="OK. Se utilizará el BSSID original:"
+	arr["FRENCH","custom_et_text_6"]="\${pending_of_translation} OK. Le BSSID original sera utilisé :"
+	arr["CATALAN","custom_et_text_6"]="\${pending_of_translation} OK. S'utilitzarà el BSSID original:"
+	arr["PORTUGUESE","custom_et_text_6"]="\${pending_of_translation} OK. O BSSID original será usado:"
+	arr["RUSSIAN","custom_et_text_6"]="\${pending_of_translation} ОК. Будет использован исходный BSSID:"
+	arr["GREEK","custom_et_text_6"]="\${pending_of_translation} OK. Το αρχικό BSSID θα χρησιμοποιηθεί:"
+	arr["ITALIAN","custom_et_text_6"]="\${pending_of_translation} OK. Verrà utilizzato il BSSID originale:"
+	arr["POLISH","custom_et_text_6"]="\${pending_of_translation} OK. Zostanie użyty oryginalny BSSID:"
+	arr["GERMAN","custom_et_text_6"]="OK. Die originale BSSID wird verwendet:"
+	arr["TURKISH","custom_et_text_6"]="\${pending_of_translation} Tamam. Orijinal BSSID kullanılacak:"
+	arr["ARABIC","custom_et_text_6"]="\${pending_of_translation} حسنا. سيتم استخدام BSSID الأصلي:"
+	arr["CHINESE","custom_et_text_6"]="\${pending_of_translation} 好的。将使用原始 BSSID："
 
 	arr["ENGLISH","custom_et_text_7"]="Warning: This may cause instability in the network!"
 	arr["SPANISH","custom_et_text_7"]="Advertencia: ¡Esto puede causar inestabilidad en la red!"
@@ -136,19 +137,19 @@ function custom_et_control_prehook_hookable_for_languages() {
 	arr["ARABIC","custom_et_text_8"]="\${pending_of_translation} الرجاء إدخال BSSID المطلوب (بالتنسيق XX:XX:XX:XX:XX:XX):"
 	arr["CHINESE","custom_et_text_8"]="\${pending_of_translation} 请输入所需的 BSSID（格式 XX:XX:XX:XX:XX:XX）："
 
-	arr["ENGLISH","custom_et_text_9"]="BSSID has been set to: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["SPANISH","custom_et_text_9"]="BSSID se ha configurado a: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["FRENCH","custom_et_text_9"]="\${pending_of_translation} Le BSSID a été défini sur : \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["CATALAN","custom_et_text_9"]="\${pending_of_translation} El BSSID s'ha establert a: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["PORTUGUESE","custom_et_text_9"]="\${pending_of_translation} O BSSID foi definido para: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["RUSSIAN","custom_et_text_9"]="\${pending_of_translation} BSSID был установлен на: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["GREEK","custom_et_text_9"]="\${pending_of_translation} Το BSSID έχει οριστεί σε: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["ITALIAN","custom_et_text_9"]="\${pending_of_translation} Il BSSID è stato impostato su: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["POLISH","custom_et_text_9"]="\${pending_of_translation} BSSID został ustawiony na: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["GERMAN","custom_et_text_9"]="BSSID wurde gesetzt auf: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["TURKISH","custom_et_text_9"]="\${pending_of_translation} BSSID şu olarak ayarlandı: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["ARABIC","custom_et_text_9"]="\${pending_of_translation} تم تعيين BSSID إلى: \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
-	arr["CHINESE","custom_et_text_9"]="\${pending_of_translation} BSSID 已设置为： \${cyan_color}\${custom_et_chosen_bssid}\${normal_color}"
+	arr["ENGLISH","custom_et_text_9"]="BSSID has been set to:"
+	arr["SPANISH","custom_et_text_9"]="BSSID se ha configurado a:"
+	arr["FRENCH","custom_et_text_9"]="\${pending_of_translation} Le BSSID a été défini sur :"
+	arr["CATALAN","custom_et_text_9"]="\${pending_of_translation} El BSSID s'ha establert a:"
+	arr["PORTUGUESE","custom_et_text_9"]="\${pending_of_translation} O BSSID foi definido para:"
+	arr["RUSSIAN","custom_et_text_9"]="\${pending_of_translation} BSSID был установлен на:"
+	arr["GREEK","custom_et_text_9"]="\${pending_of_translation} Το BSSID έχει οριστεί σε:"
+	arr["ITALIAN","custom_et_text_9"]="\${pending_of_translation} Il BSSID è stato impostato su:"
+	arr["POLISH","custom_et_text_9"]="\${pending_of_translation} BSSID został ustawiony na:"
+	arr["GERMAN","custom_et_text_9"]="BSSID wurde gesetzt auf:"
+	arr["TURKISH","custom_et_text_9"]="\${pending_of_translation} BSSID şu olarak ayarlandı:"
+	arr["ARABIC","custom_et_text_9"]="\${pending_of_translation} تم تعيين BSSID إلى:"
+	arr["CHINESE","custom_et_text_9"]="\${pending_of_translation} BSSID 已设置为："
 
 	arr["ENGLISH","custom_et_text_10"]="Invalid format. Generating standard BSSID..."
 	arr["SPANISH","custom_et_text_10"]="Formato no válido. Generando BSSID estándar..."
@@ -165,7 +166,7 @@ function custom_et_control_prehook_hookable_for_languages() {
 	arr["CHINESE","custom_et_text_10"]="\${pending_of_translation} 格式无效。正在生成标准 BSSID..."
 
 	arr["ENGLISH","custom_et_text_11"]="OK. Standard airgeddon BSSID will be used."
-	arr["SPANISH","custom_et_text_11"]="OK. Se utilizará el BSSID estándar de airgeddon."
+	arr["SPANISH","custom_et_text_11"]="OK. Se utilizará el BSSID estándar de airgeddon"
 	arr["FRENCH","custom_et_text_11"]="\${pending_of_translation} OK. Le BSSID standard d'airgeddon sera utilisé."
 	arr["CATALAN","custom_et_text_11"]="\${pending_of_translation} OK. S'utilitzarà el BSSID estàndard d'airgeddon."
 	arr["PORTUGUESE","custom_et_text_11"]="\${pending_of_translation} OK. O BSSID padrão do airgeddon será usado."
@@ -178,23 +179,23 @@ function custom_et_control_prehook_hookable_for_languages() {
 	arr["ARABIC","custom_et_text_11"]="\${pending_of_translation} حسنا. سيتم استخدام BSSID الافتراضي لـ airgeddon."
 	arr["CHINESE","custom_et_text_11"]="\${pending_of_translation} 好的。将使用标准 airgeddon BSSID。"
 
-	arr["ENGLISH","custom_et_text_12"]="Current channel: \${cyan_color}\${channel}\${normal_color}"
-	arr["SPANISH","custom_et_text_12"]="Canal actual: \${cyan_color}\${channel}\${normal_color}"
-	arr["FRENCH","custom_et_text_12"]="\${pending_of_translation} Canal actuel : \${cyan_color}\${channel}\${normal_color}"
-	arr["CATALAN","custom_et_text_12"]="\${pending_of_translation} Canal actual: \${cyan_color}\${channel}\${normal_color}"
-	arr["PORTUGUESE","custom_et_text_12"]="\${pending_of_translation} Canal atual: \${cyan_color}\${channel}\${normal_color}"
-	arr["RUSSIAN","custom_et_text_12"]="\${pending_of_translation} Текущий канал: \${cyan_color}\${channel}\${normal_color}"
-	arr["GREEK","custom_et_text_12"]="\${pending_of_translation} Τρέχον κανάλι: \${cyan_color}\${channel}\${normal_color}"
-	arr["ITALIAN","custom_et_text_12"]="\${pending_of_translation} Canale attuale: \${cyan_color}\${channel}\${normal_color}"
-	arr["POLISH","custom_et_text_12"]="\${pending_of_translation} Aktualny kanał: \${cyan_color}\${channel}\${normal_color}"
-	arr["GERMAN","custom_et_text_12"]="Aktueller Kanal: \${cyan_color}\${channel}\${normal_color}"
-	arr["TURKISH","custom_et_text_12"]="\${pending_of_translation} Geçerli kanal: \${cyan_color}\${channel}\${normal_color}"
-	arr["ARABIC","custom_et_text_12"]="\${pending_of_translation} القناة الحالية: \${cyan_color}\${channel}\${normal_color}"
-	arr["CHINESE","custom_et_text_12"]="\${pending_of_translation} 当前信道： \${cyan_color}\${channel}\${normal_color}"
+	arr["ENGLISH","custom_et_text_12"]="Current channel:"
+	arr["SPANISH","custom_et_text_12"]="Canal actual:"
+	arr["FRENCH","custom_et_text_12"]="\${pending_of_translation} Canal actuel:"
+	arr["CATALAN","custom_et_text_12"]="\${pending_of_translation} Canal actual:"
+	arr["PORTUGUESE","custom_et_text_12"]="\${pending_of_translation} Canal atual:"
+	arr["RUSSIAN","custom_et_text_12"]="\${pending_of_translation} Текущий канал:"
+	arr["GREEK","custom_et_text_12"]="\${pending_of_translation} Τρέχον κανάλι:"
+	arr["ITALIAN","custom_et_text_12"]="\${pending_of_translation} Canale attuale:"
+	arr["POLISH","custom_et_text_12"]="\${pending_of_translation} Aktualny kanał:"
+	arr["GERMAN","custom_et_text_12"]="Aktueller Kanal:"
+	arr["TURKISH","custom_et_text_12"]="\${pending_of_translation} Geçerli kanal:"
+	arr["ARABIC","custom_et_text_12"]="\${pending_of_translation} القناة الحالية:"
+	arr["CHINESE","custom_et_text_12"]="\${pending_of_translation} 当前信道："
 
 	arr["ENGLISH","custom_et_text_12b"]="Enter a new channel (e.g. 1-233) or press Enter to keep it:"
 	arr["SPANISH","custom_et_text_12b"]="Introduzca un nuevo canal (ej. 1-233) o presione Intro para mantenerlo:"
-	arr["FRENCH","custom_et_text_12b"]="\${pending_of_translation} Entrez un nouveau canal (par ex. 1-233) ou appuyez sur Entrée pour le conserver :"
+	arr["FRENCH","custom_et_text_12b"]="\${pending_of_translation} Entrez un nouveau canal (par ex. 1-233) ou appuyez sur Entrée pour le conserver:"
 	arr["CATALAN","custom_et_text_12b"]="\${pending_of_translation} Introduïu un canal nou (p. ex. 1-233) o premeu Enter per mantenir-lo:"
 	arr["PORTUGUESE","custom_et_text_12b"]="\${pending_of_translation} Digite um novo canal (ex. 1-233) ou pressione Enter para mantê-lo:"
 	arr["RUSSIAN","custom_et_text_12b"]="\${pending_of_translation} Введите новый канал (например, 1-233) или нажмите Enter, чтобы оставить его:"
@@ -206,33 +207,33 @@ function custom_et_control_prehook_hookable_for_languages() {
 	arr["ARABIC","custom_et_text_12b"]="\${pending_of_translation} أدخل قناة جديدة (مثلاً 1-233) أو اضغط Enter للاحتفاظ بها:"
 	arr["CHINESE","custom_et_text_12b"]="\${pending_of_translation} 输入新信道（例如 1-233）或按回车键保持不变："
 
-	arr["ENGLISH","custom_et_text_13"]="Channel has been set to: \${cyan_color}\${channel}\${normal_color}"
-	arr["SPANISH","custom_et_text_13"]="El canal se configuró a: \${cyan_color}\${channel}\${normal_color}"
-	arr["FRENCH","custom_et_text_13"]="\${pending_of_translation} Le canal a été défini sur : \${cyan_color}\${channel}\${normal_color}"
-	arr["CATALAN","custom_et_text_13"]="\${pending_of_translation} El canal s'ha establert a: \${cyan_color}\${channel}\${normal_color}"
-	arr["PORTUGUESE","custom_et_text_13"]="\${pending_of_translation} O canal foi definido para: \${cyan_color}\${channel}\${normal_color}"
-	arr["RUSSIAN","custom_et_text_13"]="\${pending_of_translation} Канал установлен на: \${cyan_color}\${channel}\${normal_color}"
-	arr["GREEK","custom_et_text_13"]="\${pending_of_translation} Το κανάλι έχει οριστεί σε: \${cyan_color}\${channel}\${normal_color}"
-	arr["ITALIAN","custom_et_text_13"]="\${pending_of_translation} Il canale è stato impostato su: \${cyan_color}\${channel}\${normal_color}"
-	arr["POLISH","custom_et_text_13"]="\${pending_of_translation} Kanał został ustawiony na: \${cyan_color}\${channel}\${normal_color}"
-	arr["GERMAN","custom_et_text_13"]="Kanal wurde gesetzt auf: \${cyan_color}\${channel}\${normal_color}"
-	arr["TURKISH","custom_et_text_13"]="\${pending_of_translation} Kanal şu olarak ayarlandı: \${cyan_color}\${channel}\${normal_color}"
-	arr["ARABIC","custom_et_text_13"]="\${pending_of_translation} تم تعيين القناة إلى: \${cyan_color}\${channel}\${normal_color}"
-	arr["CHINESE","custom_et_text_13"]="\${pending_of_translation} 信道已设置为： \${cyan_color}\${channel}\${normal_color}"
+	arr["ENGLISH","custom_et_text_13"]="Channel has been set to:"
+	arr["SPANISH","custom_et_text_13"]="El canal se configuró a:"
+	arr["FRENCH","custom_et_text_13"]="\${pending_of_translation} Le canal a été défini sur:"
+	arr["CATALAN","custom_et_text_13"]="\${pending_of_translation} El canal s'ha establert a:"
+	arr["PORTUGUESE","custom_et_text_13"]="\${pending_of_translation} O canal foi definido para:"
+	arr["RUSSIAN","custom_et_text_13"]="\${pending_of_translation} Канал установлен на:"
+	arr["GREEK","custom_et_text_13"]="\${pending_of_translation} Το κανάλι έχει οριστεί σε:"
+	arr["ITALIAN","custom_et_text_13"]="\${pending_of_translation} Il canale è stato impostato su:"
+	arr["POLISH","custom_et_text_13"]="\${pending_of_translation} Kanał został ustawiony na:"
+	arr["GERMAN","custom_et_text_13"]="Kanal wurde gesetzt auf:"
+	arr["TURKISH","custom_et_text_13"]="\${pending_of_translation} Kanal şu olarak ayarlandı:"
+	arr["ARABIC","custom_et_text_13"]="\${pending_of_translation} تم تعيين القناة إلى:"
+	arr["CHINESE","custom_et_text_13"]="\${pending_of_translation} 信道已设置为："
 
-	arr["ENGLISH","custom_et_text_14"]="Keeping standard channel: \${cyan_color}\${channel}\${normal_color}"
-	arr["SPANISH","custom_et_text_14"]="Manteniendo el canal estándar: \${cyan_color}\${channel}\${normal_color}"
-	arr["FRENCH","custom_et_text_14"]="\${pending_of_translation} Conservation du canal standard : \${cyan_color}\${channel}\${normal_color}"
-	arr["CATALAN","custom_et_text_14"]="\${pending_of_translation} Es manté el canal estàndard: \${cyan_color}\${channel}\${normal_color}"
-	arr["PORTUGUESE","custom_et_text_14"]="\${pending_of_translation} Mantendo o canal padrão: \${cyan_color}\${channel}\${normal_color}"
-	arr["RUSSIAN","custom_et_text_14"]="\${pending_of_translation} Сохранение стандартного канала: \${cyan_color}\${channel}\${normal_color}"
-	arr["GREEK","custom_et_text_14"]="\${pending_of_translation} Διατήρηση τυπικού καναλιού: \${cyan_color}\${channel}\${normal_color}"
-	arr["ITALIAN","custom_et_text_14"]="\${pending_of_translation} Mantenimento del canale standard: \${cyan_color}\${channel}\${normal_color}"
-	arr["POLISH","custom_et_text_14"]="\${pending_of_translation} Zachowanie standardowego kanału: \${cyan_color}\${channel}\${normal_color}"
-	arr["GERMAN","custom_et_text_14"]="Standard-Kanal wird verwendet: \${cyan_color}\${channel}\${normal_color}"
-	arr["TURKISH","custom_et_text_14"]="\${pending_of_translation} Standart kanal korunuyor: \${cyan_color}\${channel}\${normal_color}"
-	arr["ARABIC","custom_et_text_14"]="\${pending_of_translation} الاحتفاظ بالقناة القياسية: \${cyan_color}\${channel}\${normal_color}"
-	arr["CHINESE","custom_et_text_14"]="\${pending_of_translation} 保持标准信道： \${cyan_color}\${channel}\${normal_color}"
+	arr["ENGLISH","custom_et_text_14"]="Keeping standard channel:"
+	arr["SPANISH","custom_et_text_14"]="Manteniendo el canal estándar:"
+	arr["FRENCH","custom_et_text_14"]="\${pending_of_translation} Conservation du canal standard:"
+	arr["CATALAN","custom_et_text_14"]="\${pending_of_translation} Es manté el canal estàndard:"
+	arr["PORTUGUESE","custom_et_text_14"]="\${pending_of_translation} Mantendo o canal padrão:"
+	arr["RUSSIAN","custom_et_text_14"]="\${pending_of_translation} Сохранение стандартного канала:"
+	arr["GREEK","custom_et_text_14"]="\${pending_of_translation} Διατήρηση τυπικού καναλιού:"
+	arr["ITALIAN","custom_et_text_14"]="\${pending_of_translation} Mantenimento del canale standard:"
+	arr["POLISH","custom_et_text_14"]="\${pending_of_translation} Zachowanie standardowego kanału:"
+	arr["GERMAN","custom_et_text_14"]="Standard-Kanal wird verwendet:"
+	arr["TURKISH","custom_et_text_14"]="\${pending_of_translation} Standart kanal korunuyor:"
+	arr["ARABIC","custom_et_text_14"]="\${pending_of_translation} الاحتفاظ بالقناة القياسية:"
+	arr["CHINESE","custom_et_text_14"]="\${pending_of_translation} 保持标准信道："
 
 	arr["ENGLISH","custom_et_text_15"]="How should the ESSID (AP name) for the Evil Twin be set?"
 	arr["SPANISH","custom_et_text_15"]="¿Cómo se debe configurar el ESSID (nombre del AP) para el Evil Twin?"
@@ -248,19 +249,19 @@ function custom_et_control_prehook_hookable_for_languages() {
 	arr["ARABIC","custom_et_text_15"]="\${pending_of_translation} كيف يجب تعيين ESSID (اسم نقطة الوصول) لـ Evil Twin؟"
 	arr["CHINESE","custom_et_text_15"]="\${pending_of_translation} 应该如何设置 Evil Twin 的 ESSID（AP名称）？"
 
-	arr["ENGLISH","custom_et_text_16"]="Use exact original ESSID \${cyan_color}(\${essid})\${normal_color}"
-	arr["SPANISH","custom_et_text_16"]="Usar el ESSID original exacto \${cyan_color}(\${essid})\${normal_color}"
-	arr["FRENCH","custom_et_text_16"]="\${pending_of_translation} Utiliser l'ESSID original exact \${cyan_color}(\${essid})\${normal_color}"
-	arr["CATALAN","custom_et_text_16"]="\${pending_of_translation} Utilitzar l'ESSID original exacte \${cyan_color}(\${essid})\${normal_color}"
-	arr["PORTUGUESE","custom_et_text_16"]="\${pending_of_translation} Usar o ESSID original exato \${cyan_color}(\${essid})\${normal_color}"
-	arr["RUSSIAN","custom_et_text_16"]="\${pending_of_translation} Использовать точный исходный ESSID \${cyan_color}(\${essid})\${normal_color}"
-	arr["GREEK","custom_et_text_16"]="\${pending_of_translation} Χρησιμοποιήστε το ακριβές αρχικό ESSID \${cyan_color}(\${essid})\${normal_color}"
-	arr["ITALIAN","custom_et_text_16"]="\${pending_of_translation} Usa l'esatto ESSID originale \${cyan_color}(\${essid})\${normal_color}"
-	arr["POLISH","custom_et_text_16"]="\${pending_of_translation} Użyj dokładnego oryginalnego ESSID \${cyan_color}(\${essid})\${normal_color}"
-	arr["GERMAN","custom_et_text_16"]="Exakte originale ESSID verwenden \${cyan_color}(\${essid})\${normal_color}"
-	arr["TURKISH","custom_et_text_16"]="\${pending_of_translation} Tam orijinal ESSID'yi kullan \${cyan_color}(\${essid})\${normal_color}"
-	arr["ARABIC","custom_et_text_16"]="\${pending_of_translation} استخدام ESSID الأصلي بالضبط \${cyan_color}(\${essid})\${normal_color}"
-	arr["CHINESE","custom_et_text_16"]="\${pending_of_translation} 使用确切的原始 ESSID \${cyan_color}(\${essid})\${normal_color}"
+	arr["ENGLISH","custom_et_text_16"]="Use exact original ESSID"
+	arr["SPANISH","custom_et_text_16"]="Usar el ESSID original exacto"
+	arr["FRENCH","custom_et_text_16"]="\${pending_of_translation} Utiliser l'ESSID original exact"
+	arr["CATALAN","custom_et_text_16"]="\${pending_of_translation} Utilitzar l'ESSID original exacte"
+	arr["PORTUGUESE","custom_et_text_16"]="\${pending_of_translation} Usar o ESSID original exato"
+	arr["RUSSIAN","custom_et_text_16"]="\${pending_of_translation} Использовать точный исходный ESSID"
+	arr["GREEK","custom_et_text_16"]="\${pending_of_translation} Χρησιμοποιήστε το ακριβές αρχικό ESSID"
+	arr["ITALIAN","custom_et_text_16"]="\${pending_of_translation} Usa l'esatto ESSID originale"
+	arr["POLISH","custom_et_text_16"]="\${pending_of_translation} Użyj dokładnego oryginalnego ESSID"
+	arr["GERMAN","custom_et_text_16"]="Exakte originale ESSID verwenden"
+	arr["TURKISH","custom_et_text_16"]="\${pending_of_translation} Tam orijinal ESSID'yi kullan"
+	arr["ARABIC","custom_et_text_16"]="\${pending_of_translation} استخدام ESSID الأصلي بالضبط"
+	arr["CHINESE","custom_et_text_16"]="\${pending_of_translation} 使用确切的原始 ESSID"
 
 	arr["ENGLISH","custom_et_text_17"]="Enter a new ESSID manually"
 	arr["SPANISH","custom_et_text_17"]="Introducir un nuevo ESSID manualmente"
@@ -287,22 +288,22 @@ function custom_et_control_prehook_hookable_for_languages() {
 	arr["POLISH","custom_et_text_18"]="\${pending_of_translation} Użyj standardowego ESSID airgeddon (domyślnie)"
 	arr["GERMAN","custom_et_text_18"]="Standard airgeddon ESSID verwenden (Standard)"
 	arr["TURKISH","custom_et_text_18"]="\${pending_of_translation} Standart airgeddon ESSID kullan (varsayılan)"
-	arr["ARABIC","custom_et_text_18"]="\${pending_of_translation} استخدام ESSID الافتراضي  لـ airgeddon (الافتراضي)"
-	arr["CHINESE","custom_et_text_18"]="\${pending_of_translation} 使用标准 airgeddon ESSID（默认）"
+	arr["ARABIC","custom_et_text_18"]="\${pending_of_translation} استخدام ESSID الافتراضي لـ airgeddon (الافتراضي)"
+	arr["CHINESE","custom_et_text_18"]="\${pending_of_translation} 使用标准  airgeddon ESSID（默认）"
 
-	arr["ENGLISH","custom_et_text_19"]="OK. Exact original ESSID will be used: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["SPANISH","custom_et_text_19"]="OK. Se utilizará el ESSID original: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["FRENCH","custom_et_text_19"]="\${pending_of_translation} OK. L'ESSID original sera utilisé : \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["CATALAN","custom_et_text_19"]="\${pending_of_translation} OK. S'utilitzarà l'ESSID original: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["PORTUGUESE","custom_et_text_19"]="\${pending_of_translation} OK. O ESSID original será usado: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["RUSSIAN","custom_et_text_19"]="\${pending_of_translation} ОК. Будет использован исходный ESSID: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["GREEK","custom_et_text_19"]="\${pending_of_translation} OK. Το αρχικό ESSID θα χρησιμοποιηθεί: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["ITALIAN","custom_et_text_19"]="\${pending_of_translation} OK. Verrà utilizzato l'ESSID originale: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["POLISH","custom_et_text_19"]="\${pending_of_translation} OK. Zostanie użyty oryginalny ESSID: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["GERMAN","custom_et_text_19"]="OK. Die originale ESSID wird verwendet: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["TURKISH","custom_et_text_19"]="\${pending_of_translation} Tamam. Orijinal ESSID kullanılacak: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["ARABIC","custom_et_text_19"]="\${pending_of_translation} حسنا. سيتم استخدام ESSID الأصلي: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["CHINESE","custom_et_text_19"]="\${pending_of_translation} 好的。将使用原始 ESSID： \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
+	arr["ENGLISH","custom_et_text_19"]="OK. Exact original ESSID will be used:"
+	arr["SPANISH","custom_et_text_19"]="OK. Se utilizará el ESSID original:"
+	arr["FRENCH","custom_et_text_19"]="\${pending_of_translation} OK. L'ESSID original sera utilisé :"
+	arr["CATALAN","custom_et_text_19"]="\${pending_of_translation} OK. S'utilitzarà l'ESSID original:"
+	arr["PORTUGUESE","custom_et_text_19"]="\${pending_of_translation} OK. O ESSID original será usado:"
+	arr["RUSSIAN","custom_et_text_19"]="\${pending_of_translation} ОК. Будет использован исходный ESSID:"
+	arr["GREEK","custom_et_text_19"]="\${pending_of_translation} OK. Το αρχικό ESSID θα χρησιμοποιηθεί:"
+	arr["ITALIAN","custom_et_text_19"]="\${pending_of_translation} OK. Verrà utilizzato l'ESSID originale:"
+	arr["POLISH","custom_et_text_19"]="\${pending_of_translation} OK. Zostanie użyty oryginalny ESSID:"
+	arr["GERMAN","custom_et_text_19"]="OK. Die originale ESSID wird verwendet:"
+	arr["TURKISH","custom_et_text_19"]="\${pending_of_translation} Tamam. Orijinal ESSID kullanılacak:"
+	arr["ARABIC","custom_et_text_19"]="\${pending_of_translation} حسنا. سيتم استخدام ESSID الأصلي:"
+	arr["CHINESE","custom_et_text_19"]="\${pending_of_translation} 好的。将使用原始 ESSID："
 
 	arr["ENGLISH","custom_et_text_20"]="Please enter the desired ESSID (cannot be empty):"
 	arr["SPANISH","custom_et_text_20"]="Introduzca el ESSID deseado (no puede estar vacío):"
@@ -318,51 +319,65 @@ function custom_et_control_prehook_hookable_for_languages() {
 	arr["ARABIC","custom_et_text_20"]="\${pending_of_translation} الرجاء إدخال ESSID المطلوب (لا يمكن أن يكون فارغًا):"
 	arr["CHINESE","custom_et_text_20"]="\${pending_of_translation} 请输入所需的 ESSID（不能为空）："
 
-	arr["ENGLISH","custom_et_text_21"]="ESSID has been set to: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["SPANISH","custom_et_text_21"]="ESSID se ha configurado en: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["FRENCH","custom_et_text_21"]="\${pending_of_translation} L'ESSID a été défini sur : \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["CATALAN","custom_et_text_21"]="\${pending_of_translation} L'ESSID s'ha establert a: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["PORTUGUESE","custom_et_text_21"]="\${pending_of_translation} O ESSID foi definido para: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["RUSSIAN","custom_et_text_21"]="\${pending_of_translation} ESSID был установлен на: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["GREEK","custom_et_text_21"]="\${pending_of_translation} Το ESSID έχει οριστεί σε: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["ITALIAN","custom_et_text_21"]="\${pending_of_translation} L'ESSID è stato impostato su: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["POLISH","custom_et_text_21"]="\${pending_of_translation} ESSID został ustawiony na: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["GERMAN","custom_et_text_21"]="ESSID wurde gesetzt auf: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["TURKISH","custom_et_text_21"]="\${pending_of_translation} ESSID şu olarak ayarlandı: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["ARABIC","custom_et_text_21"]="\${pending_of_translation} تم تعيين ESSID إلى: \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
-	arr["CHINESE","custom_et_text_21"]="\${pending_of_translation} ESSID 已设置为： \${cyan_color}\"\${custom_et_chosen_essid}\"\${normal_color}"
+	arr["ENGLISH","custom_et_text_21"]="ESSID has been set to:"
+	arr["SPANISH","custom_et_text_21"]="ESSID se ha configurado en:"
+	arr["FRENCH","custom_et_text_21"]="\${pending_of_translation} L'ESSID a été défini sur :"
+	arr["CATALAN","custom_et_text_21"]="\${pending_of_translation} L'ESSID s'ha establert a:"
+	arr["PORTUGUESE","custom_et_text_21"]="\${pending_of_translation} O ESSID foi definido para:"
+	arr["RUSSIAN","custom_et_text_21"]="\${pending_of_translation} ESSID был установлен на:"
+	arr["GREEK","custom_et_text_21"]="\${pending_of_translation} Το ESSID έχει οριστεί σε:"
+	arr["ITALIAN","custom_et_text_21"]="\${pending_of_translation} L'ESSID è stato impostato su:"
+	arr["POLISH","custom_et_text_21"]="\${pending_of_translation} ESSID został ustawiony na:"
+	arr["GERMAN","custom_et_text_21"]="ESSID wurde gesetzt auf:"
+	arr["TURKISH","custom_et_text_21"]="\${pending_of_translation} ESSID şu olarak ayarlandı:"
+	arr["ARABIC","custom_et_text_21"]="\${pending_of_translation} تم تعيين ESSID إلى:"
+	arr["CHINESE","custom_et_text_21"]="\${pending_of_translation} ESSID 已设置为："
 
-	arr["ENGLISH","custom_et_text_23"]="OK. Standard airgeddon ESSID will be used: \${cyan_color}\"\${essid}\"\${normal_color}"
-	arr["SPANISH","custom_et_text_23"]="OK. Se utilizará el ESSID estándar de airgeddon: \${cyan_color}\"\${essid}\"\${normal_color}"
-	arr["FRENCH","custom_et_text_23"]="\${pending_of_translation} OK. L'ESSID standard d'airgeddon sera utilisé: \${cyan_color}\"\${essid}\"\${normal_color}"
-	arr["CATALAN","custom_et_text_23"]="\${pending_of_translation} OK. S'utilitzarà l'ESSID estàndard d'airgeddon: \${cyan_color}\"\${essid}\"\${normal_color}"
-	arr["PORTUGUESE","custom_et_text_23"]="\${pending_of_translation} OK. O ESSID padrão do airgeddon será usado: \${cyan_color}\"\${essid}\"\${normal_color}"
-	arr["RUSSIAN","custom_et_text_23"]="\${pending_of_translation} ОК. Будет использован стандартный ESSID airgeddon: \${cyan_color}\"\${essid}\"\${normal_color}"
-	arr["GREEK","custom_et_text_23"]="\${pending_of_translation} OK. Θα χρησιμοποιηθεί το τυπικό ESSID του airgeddon: \${cyan_color}\"\${essid}\"\${normal_color}"
-	arr["ITALIAN","custom_et_text_23"]="\${pending_of_translation} OK. Verrà utilizzato l'ESSID standard di airgeddon: \${cyan_color}\"\${essid}\"\${normal_color}"
-	arr["POLISH","custom_et_text_23"]="\${pending_of_translation} OK. Zostanie użyty standardowy ESSID airgeddon: \${cyan_color}\"\${essid}\"\${normal_color}"
-	arr["GERMAN","custom_et_text_23"]="OK. Die Standard airgeddon ESSID wird verwendet: \${cyan_color}\"\${essid}\"\${normal_color}"
-	arr["TURKISH","custom_et_text_23"]="\${pending_of_translation} Tamam. Standart airgeddon ESSID kullanılacak: \${cyan_color}\"\${essid}\"\${normal_color}"
-	arr["ARABIC","custom_et_text_23"]="\${pending_of_translation} حسنا. سيتم استخدام ESSID الافتراضي لـ airgeddon: \${cyan_color}\"\${essid}\"\${normal_color}"
-	arr["CHINESE","custom_et_text_23"]="\${pending_of_translation} 好的。将使用标准 airgeddon ESSID： \${cyan_color}\"\${essid}\"\${normal_color}"
+	arr["ENGLISH","custom_et_text_22"]="No input. Generating standard ESSID..."
+	arr["SPANISH","custom_et_text_22"]="Sin entrada. Generando ESSID estándar..."
+	arr["FRENCH","custom_et_text_22"]="\${pending_of_translation} Aucune saisie. Génération de l'ESSID standard..."
+	arr["CATALAN","custom_et_text_22"]="\${pending_of_translation} Sense entrada. Generant ESSID estàndard..."
+	arr["PORTUGUESE","custom_et_text_22"]="\${pending_of_translation} Sem entrada. Gerando ESSID padrão..."
+	arr["RUSSIAN","custom_et_text_22"]="\${pending_of_translation} Нет ввода. Генерация стандартного ESSID..."
+	arr["GREEK","custom_et_text_22"]="\${pending_of_translation} Καμία εισαγωγή. Δημιουργία τυπικού ESSID..."
+	arr["ITALIAN","custom_et_text_22"]="\${pending_of_translation} Nessun input. Generazione dell'ESSID standard..."
+	arr["POLISH","custom_et_text_22"]="\${pending_of_translation} Brak danych. Generowanie standardowego ESSID..."
+	arr["GERMAN","custom_et_text_22"]="Keine Eingabe. Standard-ESSID wird generiert..."
+	arr["TURKISH","custom_et_text_22"]="\${pending_of_translation} Giriş yok. Standart ESSID oluşturuluyor..."
+	arr["ARABIC","custom_et_text_22"]="\${pending_of_translation} لا يوجد إدخال. جارٍ إنشاء ESSID الافتراضي..."
+	arr["CHINESE","custom_et_text_22"]="\${pending_of_translation} 无输入。正在生成标准 ESSID..."
 
-	arr["ENGLISH","custom_et_text_24"]="Note: Changing channel means DoS won't work simultaneously on original channel"
-	arr["SPANISH","custom_et_text_24"]="Nota: Cambiar de canal significa que DoS no funcionará simultáneamente en el canal original"
-	arr["FRENCH","custom_et_text_24"]="\${pending_of_translation} Note : Changer de canal signifie que le DoS ne fonctionnera pas simultanément sur le canal d'origine"
-	arr["CATALAN","custom_et_text_24"]="\${pending_of_translation} Nota: Canviar de canal significa que DoS no funcionarà simultàniament al canal original"
-	arr["PORTUGUESE","custom_et_text_24"]="\${pending_of_translation} Nota: Mudar de canal significa que o DoS não funcionará simultaneamente no canal original"
-	arr["RUSSIAN","custom_et_text_24"]="\${pending_of_translation} Примечание: Смена канала означает, что DoS не будет работать одновременно на исходном канале"
-	arr["GREEK","custom_et_text_24"]="\${pending_of_translation} Σημείωση: Η αλλαγή καναλιού σημαίνει ότι το DoS δεν θα λειτουργεί ταυτόχρονα στο αρχικό κανάλι"
-	arr["ITALIAN","custom_et_text_24"]="\${pending_of_translation} Nota: Cambiare canale significa che il DoS non funzionerà simultaneamente sul canale originale"
-	arr["POLISH","custom_et_text_24"]="\${pending_of_translation} Uwaga: Zmiana kanału oznacza, że DoS nie będzie działał jednocześnie na oryginalnym kanale"
+	arr["ENGLISH","custom_et_text_23"]="OK. Standard airgeddon ESSID will be used."
+	arr["SPANISH","custom_et_text_23"]="OK. Se utilizará el ESSID estándar de airgeddon"
+	arr["FRENCH","custom_et_text_23"]="\${pending_of_translation} OK. L'ESSID standard d'airgeddon sera utilisé."
+	arr["CATALAN","custom_et_text_23"]="\${pending_of_translation} OK. S'utilitzarà l'ESSID estàndard d'airgeddon."
+	arr["PORTUGUESE","custom_et_text_23"]="\${pending_of_translation} OK. O ESSID padrão do airgeddon será usado."
+	arr["RUSSIAN","custom_et_text_23"]="\${pending_of_translation} ОК. Будет использован стандартный ESSID airgeddon."
+	arr["GREEK","custom_et_text_23"]="\${pending_of_translation} OK. Θα χρησιμοποιηθεί το τυπικό ESSID του airgeddon."
+	arr["ITALIAN","custom_et_text_23"]="\${pending_of_translation} OK. Verrà utilizzato l'ESSID standard di airgeddon."
+	arr["POLISH","custom_et_text_23"]="\${pending_of_translation} OK. Zostanie użyty standardowy ESSID airgeddon."
+	arr["GERMAN","custom_et_text_23"]="OK. Die Standard airgeddon ESSID wird verwendet."
+	arr["TURKISH","custom_et_text_23"]="\${pending_of_translation} Tamam. Standart airgeddon ESSID kullanılacak."
+	arr["ARABIC","custom_et_text_23"]="\${pending_of_translation} حسنا. سيتم استخدام ESSID الافتراضي لـ airgeddon."
+	arr["CHINESE","custom_et_text_23"]="\${pending_of_translation} 好的。将使用标准 airgeddon ESSID。"
+
+	arr["ENGLISH","custom_et_text_24"]="Note: Changing channel means DoS won't work simultaneously on original channel."
+	arr["SPANISH","custom_et_text_24"]="Nota: Cambiar de canal significa que el DoS no funcionará simultáneamente en el canal original"
+	arr["FRENCH","custom_et_text_24"]="\${pending_of_translation} Note : Changer de canal signifie que le DoS ne fonctionnera pas simultanément sur le canal d'origine."
+	arr["CATALAN","custom_et_text_24"]="\${pending_of_translation} Nota: Canviar de canal significa que DoS no funcionarà simultàniament al canal original."
+	arr["PORTUGUESE","custom_et_text_24"]="\${pending_of_translation} Nota: Mudar de canal significa que o DoS não funcionará simultaneamente no canal original."
+	arr["RUSSIAN","custom_et_text_24"]="\${pending_of_translation} Примечание: Смена канала означает, что DoS не будет работать одновременно на исходном канале."
+	arr["GREEK","custom_et_text_24"]="\${pending_of_translation} Σημείωση: Η αλλαγή καναλιού σημαίνει ότι το DoS δεν θα λειτουργεί ταυτόχρονα στο αρχικό κανάλι."
+	arr["ITALIAN","custom_et_text_24"]="\${pending_of_translation} Nota: Cambiare canale significa che il DoS non funzionerà simultaneamente sul canale originale."
+	arr["POLISH","custom_et_text_24"]="\${pending_of_translation} Uwaga: Zmiana kanału oznacza, że DoS nie będzie działał jednocześnie na oryginalnym kanale."
 	arr["GERMAN","custom_et_text_24"]="Hinweis: Kanalwechsel bedeutet, dass DoS nicht gleichzeitig auf Originalkanal funktioniert."
-	arr["TURKISH","custom_et_text_24"]="\${pending_of_translation} Not: Kanalı değiştirmek, DoS'un orijinal kanalda eşzamanlı çalışmayacağı anlamına gelir"
-	arr["ARABIC","custom_et_text_24"]="\${pending_of_translation} ملاحظة: تغيير القناة يعني أن هجوم DoS لن يعمل في نفس الوقت على القناة الأصلية"
-	arr["CHINESE","custom_et_text_24"]="\${pending_of_translation} 注意：更改信道意味着 DoS 将不会在原始信道上同时工作"
+	arr["TURKISH","custom_et_text_24"]="\${pending_of_translation} Not: Kanalı değiştirmek, DoS'un orijinal kanalda eşzamanlı çalışmayacağı anlamına gelir."
+	arr["ARABIC","custom_et_text_24"]="\${pending_of_translation} ملاحظة: تغيير القناة يعني أن هجوم DoS لن يعمل في نفس الوقت على القناة الأصلية."
+	arr["CHINESE","custom_et_text_24"]="\${pending_of_translation} 注意：更改信道意味着 DoS 将不会在原始信道上同时工作。"
 
 	arr["ENGLISH","custom_et_text_25"]="Which band does this channel belong to?"
 	arr["SPANISH","custom_et_text_25"]="¿A qué banda pertenece este canal?"
-	arr["FRENCH","custom_et_text_25"]="\${pending_of_translation} À quelle bande appartient ce canal ?"
+	arr["FRENCH","custom_et_text_25"]="\${pending_of_translation} À quelle bande appartient ce canal?"
 	arr["CATALAN","custom_et_text_25"]="\${pending_of_translation} A quina banda pertany aquest canal?"
 	arr["PORTUGUESE","custom_et_text_25"]="\${pending_of_translation} A qual banda este canal pertence?"
 	arr["RUSSIAN","custom_et_text_25"]="\${pending_of_translation} К какому диапазону относится этот канал?"
@@ -372,21 +387,7 @@ function custom_et_control_prehook_hookable_for_languages() {
 	arr["GERMAN","custom_et_text_25"]="Zu welchem Band gehört dieser Kanal?"
 	arr["TURKISH","custom_et_text_25"]="\${pending_of_translation} Bu kanal hangi banda ait?"
 	arr["ARABIC","custom_et_text_25"]="\${pending_of_translation} إلى أي نطاق تنتمي هذه القناة؟"
-	arr["CHINESE","custom_et_text_25"]="\${pending_of_translation} 这个信道属于哪个频段？"
-
-	arr["ENGLISH","custom_et_text_26"]="Invalid band selected."
-	arr["SPANISH","custom_et_text_26"]="\${pending_of_translation} Invalid band selected."
-	arr["FRENCH","custom_et_text_26"]="\${pending_of_translation} Invalid band selected."
-	arr["CATALAN","custom_et_text_26"]="\${pending_of_translation} Invalid band selected."
-	arr["PORTUGUESE","custom_et_text_26"]="\${pending_of_translation} Invalid band selected."
-	arr["RUSSIAN","custom_et_text_26"]="\${pending_of_translation} Invalid band selected."
-	arr["GREEK","custom_et_text_26"]="\${pending_of_translation} Invalid band selected."
-	arr["ITALIAN","custom_et_text_26"]="\${pending_of_translation} Invalid band selected."
-	arr["POLISH","custom_et_text_26"]="\${pending_of_translation} Invalid band selected."
-	arr["GERMAN","custom_et_text_26"]="Ungültiges Band ausgewählt."
-	arr["TURKISH","custom_et_text_26"]="\${pending_of_translation} Invalid band selected."
-	arr["ARABIC","custom_et_text_26"]="\${pending_of_translation} Invalid band selected."
-	arr["CHINESE","custom_et_text_26"]="\${pending_of_translation} Invalid band selected."
+	arr["CHINESE","custom_et_text_25"]="\${pending_of_translation} 此信道属于哪个频段？"
 }
 
 # ----------------------------------------------------------------------
@@ -394,59 +395,55 @@ function custom_et_control_prehook_hookable_for_languages() {
 # ----------------------------------------------------------------------
 function custom_et_control_interactive_prompt() {
 	debug_print
-
 	local lang_key="${language}"
 	if [[ -z "${arr["${lang_key}","custom_et_text_1"]}" ]]; then
 		lang_key="ENGLISH"
 	fi
-
 	custom_et_chosen_bssid=""
 	custom_et_chosen_essid=""
 
 	echo
-	language_strings "${lang_key}" "custom_et_text_1" "yellow"
+	echo -e "${yellow_color}${arr["${lang_key}","custom_et_text_1"]}${normal_color}"
 	echo
-
-	language_strings "${lang_key}" "custom_et_text_2" "cyan"
-	echo "1. $(language_strings "${lang_key}" "custom_et_text_3" "return")"
-	echo "2. $(language_strings "${lang_key}" "custom_et_text_4" "return")"
-	echo "3. $(language_strings "${lang_key}" "custom_et_text_5" "return")"
+	echo -e "${cyan_color}${arr["${lang_key}","custom_et_text_2"]}${normal_color}"
+	echo -e "1. ${arr["${lang_key}","custom_et_text_3"]} (${bssid})"
+	echo -e "2. ${arr["${lang_key}","custom_et_text_4"]}"
+	echo -e "3. ${arr["${lang_key}","custom_et_text_5"]}"
 	read -rp "> " bssid_choice
 
 	case "${bssid_choice}" in
 		1)
 			custom_et_chosen_bssid="${bssid}"
-			language_strings "${lang_key}" "custom_et_text_6" "green"
-			language_strings "${lang_key}" "custom_et_text_7" "red"
+			echo -e "${green_color}${arr["${lang_key}","custom_et_text_6"]} ${custom_et_chosen_bssid}${normal_color}"
+			echo -e "${red_color}${arr["${lang_key}","custom_et_text_7"]}${normal_color}"
 			;;
 		2)
-			language_strings "${lang_key}" "custom_et_text_8" "green"
+			echo -e "${green_color}${arr["${lang_key}","custom_et_text_8"]}${normal_color}"
 			read -rp "> " custom_bssid
 			if [[ -n "${custom_bssid}" && "${custom_bssid}" =~ ^([0-9A-Fa-f]{2}:){5}[0-9A-Fa-f]{2}$ ]]; then
 				custom_et_chosen_bssid="${custom_bssid}"
-				language_strings "${lang_key}" "custom_et_text_9" "green"
+				echo -e "${green_color}${arr["${lang_key}","custom_et_text_9"]} ${custom_et_chosen_bssid}${normal_color}"
 			else
-				language_strings "${lang_key}" "custom_et_text_10" "red"
+				echo -e "${red_color}${arr["${lang_key}","custom_et_text_10"]}${normal_color}"
 			fi
 			;;
 		*)
-			language_strings "${lang_key}" "custom_et_text_11" "green"
+			echo -e "${green_color}${arr["${lang_key}","custom_et_text_11"]}${normal_color}"
 			;;
 	esac
 
 	echo
-	language_strings "${lang_key}" "custom_et_text_12" "cyan"
-	language_strings "${lang_key}" "custom_et_text_24" "red"
-	language_strings "${lang_key}" "custom_et_text_12b" "cyan"
+	echo -e "${cyan_color}${arr["${lang_key}","custom_et_text_12"]} ${channel}${normal_color}"
+	echo -e "${red_color}${arr["${lang_key}","custom_et_text_24"]}${normal_color}"
+	echo -e "${cyan_color}${arr["${lang_key}","custom_et_text_12b"]}${normal_color}"
 	read -rp "> " custom_channel
 
 	if [[ -n "${custom_channel}" && "${custom_channel}" =~ ^[0-9]+$ && "${custom_channel}" -gt 0 && "${custom_channel}" -le 233 ]]; then
 		channel="${custom_channel}"
 		echo "${channel}" > "${tmpdir}${channelfile}"
-		language_strings "${lang_key}" "custom_et_text_13" "green"
-		
+		echo -e "${green_color}${arr["${lang_key}","custom_et_text_13"]} ${channel}${normal_color}"
 		echo
-		language_strings "${lang_key}" "custom_et_text_25" "cyan"
+		echo -e "${cyan_color}${arr["${lang_key}","custom_et_text_25"]}${normal_color}"
 		echo "1. 2.4Ghz"
 		echo "2. 5Ghz"
 		echo "3. 6Ghz"
@@ -457,55 +454,54 @@ function custom_et_control_interactive_prompt() {
 				1) band="2.4Ghz"; valid_band=1 ;;
 				2) band="5Ghz"; valid_band=1 ;;
 				3) band="6Ghz"; valid_band=1 ;;
-				*) language_strings "${lang_key}" "custom_et_text_26" "red" ;;
+				*) echo -e "${red_color}Invalid / Ungültig${normal_color}" ;;
 			esac
 		done
-		echo "Band -> ${band}"
+		echo -e "${green_color}Band -> ${band}${normal_color}"
 	else
-		language_strings "${lang_key}" "custom_et_text_14" "green"
+		echo -e "${green_color}${arr["${lang_key}","custom_et_text_14"]} ${channel}${normal_color}"
 	fi
 
 	echo
-	echo
-	language_strings "${lang_key}" "custom_et_text_15" "cyan"
-	echo "1. $(language_strings "${lang_key}" "custom_et_text_16" "return")"
-	echo "2. $(language_strings "${lang_key}" "custom_et_text_17" "return")"
-	echo "3. $(language_strings "${lang_key}" "custom_et_text_18" "return")"
+	echo -e "${cyan_color}${arr["${lang_key}","custom_et_text_15"]}${normal_color}"
+	echo -e "1. ${arr["${lang_key}","custom_et_text_16"]} (${essid})"
+	echo -e "2. ${arr["${lang_key}","custom_et_text_17"]}"
+	echo -e "3. ${arr["${lang_key}","custom_et_text_18"]}"
 	read -rp "> " essid_choice
 
 	case "${essid_choice}" in
 		1)
 			custom_et_chosen_essid="${essid}"
-			et_essid="${essid}"
-			language_strings "${lang_key}" "custom_et_text_19" "green"
+			echo -e "${green_color}${arr["${lang_key}","custom_et_text_19"]} \"${essid}\"${normal_color}"
 			;;
 		2)
 			local custom_essid=""
-			language_strings "${lang_key}" "custom_et_text_20" "green"
+			echo -e "${green_color}${arr["${lang_key}","custom_et_text_20"]}${normal_color}"
 			while [[ -z "${custom_essid}" ]]; do
 				read -r -p "> " custom_essid
 			done
 			custom_et_chosen_essid="${custom_essid}"
-			et_essid="${custom_et_chosen_essid}"
-			language_strings "${lang_key}" "custom_et_text_21" "green"
+			echo -e "${green_color}${arr["${lang_key}","custom_et_text_21"]} \"${custom_essid}\"${normal_color}"
 			;;
 		*)
 			custom_et_chosen_essid="${essid}"
-			et_essid="${essid}"
-			language_strings "${lang_key}" "custom_et_text_23" "green"
+			echo -e "${green_color}${arr["${lang_key}","custom_et_text_23"]} \"${essid}\"${normal_color}"
 			;;
 	esac
 
 	echo
 	sleep 2
 
+	if [[ -n "${custom_et_chosen_essid}" ]]; then
+		et_essid="${custom_et_chosen_essid}"
+	fi
 	if [[ -n "${custom_et_chosen_bssid}" ]]; then
 		et_bssid="${custom_et_chosen_bssid}"
 	fi
 }
 
 # ----------------------------------------------------------------------
-# Pre-hooks for configurations
+# Prehooks
 # ----------------------------------------------------------------------
 function custom_et_control_prehook_set_hostapd_config() {
 	debug_print
@@ -523,26 +519,26 @@ function custom_et_control_prehook_set_hostapd_mana_config() {
 }
 
 # ----------------------------------------------------------------------
-# Apply changes to actual config files
+# Config application (helper function)
 # ----------------------------------------------------------------------
 function custom_et_control_apply_config() {
 	local target_config_file="${1}"
 
 	if [[ -n "${custom_et_chosen_bssid}" ]]; then
 		et_bssid="${custom_et_chosen_bssid}"
-		sed -ri "s/^bssid.*/bssid=${et_bssid}/" "${target_config_file}" 2> /dev/null
+		sed -ri "s/^bssid=.*/bssid=${et_bssid}/" "${target_config_file}" 2> /dev/null
 	fi
 
 	if [[ -n "${custom_et_chosen_essid}" ]]; then
 		et_essid="${custom_et_chosen_essid}"
 		local safe_essid
-		safe_essid=$(printf '%s' "${et_essid}" | sed -e 's/\\/\\\\/g' -e 's/&/\\&/g' -e 's/|/\\|/g')
-		sed -ri "s/^ssid.*/ssid=${safe_essid}/" "${target_config_file}" 2> /dev/null
+		safe_essid=$(printf '%s' "${et_essid}" | sed -e 's/\\/\\\\/g' -e 's/|/\\|/g' -e 's/&/\\&/g')
+		sed -ri "s|^ssid=.*|ssid=${safe_essid}|" "${target_config_file}" 2> /dev/null
 	fi
 }
 
 # ----------------------------------------------------------------------
-# Post-hooks to apply changes
+# Posthooks
 # ----------------------------------------------------------------------
 function custom_et_control_posthook_set_hostapd_config() {
 	custom_et_control_apply_config "${tmpdir}${hostapd_file}"
@@ -557,7 +553,7 @@ function custom_et_control_posthook_set_hostapd_mana_config() {
 }
 
 # ----------------------------------------------------------------------
-# Pre-hook for captive portal web server index.html adaptation
+# Webserver Prehook
 # ----------------------------------------------------------------------
 function custom_et_control_prehook_launch_webserver() {
 	if [[ -n "${custom_et_chosen_essid}" ]] && [[ "${custom_et_chosen_essid}" != "${essid}" ]]; then
