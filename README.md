@@ -23,6 +23,15 @@ This plugin performs a cryptographic downgrade attack against WPA3‑SAE network
 - **Fully multi‑language** – 13 languages built‑in
 - **Tested with various adapters** including Intel Wi‑Fi 5 (802.11ac) Wireless‑AC 9x6x [Thunder Peak] and Alfa AWUS036ACH (RTL8812AU)
 
+### 4. WPA3-SAE Group Mismatch Tiebreaker Deadlock (`deadlock_attack`)
+
+This plugin exploits a logical state machine flaw in the WPA3-SAE protocol to cause a severe Denial of Service (DoS). It targets the SAE group negotiation "tiebreaker" mechanism by spoofing a MAC address that is numerically larger than the target AP and flooding it with malformed SAE Commit frames proposing alternating groups. Due to missing error handling in the IEEE 802.11-2020 standard (addressed in Erratum M), the AP fails to deallocate the "yielding" protocol instance, permanently blocking it and exhausting its resources.
+
+* **Protocol State Machine Exploitation** – Exploits a logical standard flaw rather than brute-forcing cryptography.
+* **No Crypto Calculations Required** – Uses empty payloads, bypassing the need for valid scalars or finite field values.
+* **Adapter-Independent Design** – Carefully designed to work out-of-the-box on a wide variety of Wi-Fi chipsets (e.g., Intel Wireless-AC, Alfa AWUS036ACH, Ralink RT3070).
+* **Fully multi-language** – 13 languages built-in.
+
 ---
 
 ## Installation
