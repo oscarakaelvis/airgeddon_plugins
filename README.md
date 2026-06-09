@@ -12,11 +12,11 @@ This plugin gives you full manual control over your Evil Twin attacks. By defaul
 
 It supports 13 languages natively and is fully compatible with other Captive Portal plugins.
 
-### 2. WPA3-SAE Double Decker DoS (`double_decker`)
+### 2. WPA3-SAE Double Decker DoS (`double_decker_attack`)
 This plugin introduces the advanced **Double Decker DoS attack** against WPA3 networks. It combines the *Omnivore* (random MACs) and *Muted* (static MAC) attack techniques while sending 20 pre-captured SAE authentication pairs in rapid bursts.
 This heavily stresses the target AP's CPU and memory, effectively denying service to legitimate WPA3 clients. It is fully compatible with 2.4 GHz, 5 GHz, and 6 GHz bands.
 
-### 3. WPA3‑SAE Group Downgrade Attack (`wpa3_sae_group_downgrade_attack`)
+### 3. WPA3‑SAE Group Downgrade Attack (`downgrade_attack`)
 This plugin performs a cryptographic downgrade attack against WPA3‑SAE networks, based on the Dragonblood research (CVE‑2019‑9499). Instead of the mandatory group 19 (NIST P‑256 ECC), the attack floods the target AP with SAE Commit frames that propose the weak MODP groups 2048 (22) and 3072 (23). If the AP accepts one of these groups, the subsequent handshake uses significantly weaker cryptography, enabling offline brute‑force password recovery.
 
 - **No SAE parameter extraction required** – uses cryptographically random scalars and elements
