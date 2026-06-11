@@ -8,7 +8,7 @@ plugin_author="Nuseo1"
 
 plugin_enabled=1
 
-plugin_minimum_ag_affected_version="12.0"
+plugin_minimum_ag_affected_version="12.01"
 plugin_maximum_ag_affected_version=""
 plugin_distros_supported=("*")
 
@@ -221,6 +221,8 @@ function exec_downgrade_attack() {
         "${python3} ${scriptfolder}${plugins_dir}downgrade_attack.py ${bssid} ${channel} ${interface} ${language}" \
         "WPA3 Group Downgrade Attack" "active"
 
-    wait_for_process "${python3} ${scriptfolder}${plugins_dir}downgrade_attack.py ${bssid} ${channel} ${interface} ${language}" \
-        "WPA3 Group Downgrade Attack"
+    if ! wait_for_process "${python3} ${scriptfolder}${plugins_dir}downgrade_attack.py ${bssid} ${channel} ${interface} ${language}" \
+        "WPA3 Group Downgrade Attack"; then
+        return 1
+    fi
 }
